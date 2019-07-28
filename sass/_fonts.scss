@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSans-SemiBold.eot');
+    src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+    url('../fonts/') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans ExtraBold';
+    src: url('../fonts/OpenSans-ExtraBold.eot');
+    src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+    url('../fonts/') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@mixin regular{
+    font-family: 'Open Sans Regular', sans-serif;
+}
+
+@mixin semibold{
+    font-family: 'Open Sans Semibold', sans-serif;
+}
+
+@mixin bold{
+    font-family: 'Open Sans Bold', sans-serif;
+}
+
+@mixin extrabold{
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}

@@ -1,0 +1,60 @@
+.navbar
+    position: fixed
+    transform: translate(-50%, -0)
+    top: 0%
+    left: 50%
+    &-wrap
+        background: $dark
+        display: flex
+        justify-content: space-between
+        width: 1200px
+        height: 80px
+
+.logo
+    display: flex
+    align-items: center
+    width: 170px
+    height: 80px
+    padding-left: 40px
+
+    &-text
+        +bold
+        font-size: 25px
+        color: $light
+
+.menu
+    display: flex
+    width: 320px
+    height: 80px
+    
+    &-button
+        width: 80px
+        height: 80px
+        +semibold
+        font-size: 12px
+        line-height: 80px
+        color: $light
+        text-transform: uppercase
+        text-decoration: none
+        text-align: center
+        background: $key
+
+.lang
+    display: flex
+    align-items: center
+    width: 170px
+    height: 80px
+    padding: 0px 40px
+
+    &-button
+        width: 30px
+        height: 30px
+        +semibold
+        font-size: 20px
+        line-height: 30px
+        text-decoration: none
+        text-align: center
+        color: $light
+    
+.therein
+    color: $key
