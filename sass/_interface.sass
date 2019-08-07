@@ -1,31 +1,69 @@
 body
-    +regular
 
 html
     scroll-behavior: smooth
 
-.customary-button
-        display: inline-block
-        width: 190px
-        height: 50px
-        text-decoration: none
-        text-transform: uppercase
-        +semibold
-        font-size: 15px
-        line-height: 46px
-        text-align: center
-        border: 2px solid $key
-        border-radius: 6px
+.headline
+    +bold
+    text-transform: uppercase
+    font-size: 30px
+    line-height:
 
-.hero-button
+.tagline
+    +semibold
+    font-size: 20px
+    line-height:
+    
+    &_gray
+        +semibold
+        font-size: 20px
+        line-height:
+        color: gray
+
+.regular
+    +regular
+    line-height:
+    
+    &_gray
+        +regular
+        line-height:
+        color: gray
+
+.atop
+    color: $light
+    
+.active
+   color: $key !important
+
+.customary-button
+    display: inline-block
+    width: 190px
+    height: 50px
+    text-decoration: none
+    text-transform: uppercase
+    +semibold
+    font-size: 15px
+    text-align: center
+    border-radius: 6px
+    user-select: none
+    cursor: pointer
+    position: relative
+    bottom: 0
+
+    &_feedback
         background: $key
         color: $light
+        line-height: 50px
 
-.provide-button
-    background: 
-    color: $key
-    margin-top: 80px
-
+    &_more
+        color: $key
+        border: 2px solid $key
+        line-height: 46px
+    
+    &_form
+        &_subscribe
+        &_feedback
+            
 
 .anchor
     position: absolute

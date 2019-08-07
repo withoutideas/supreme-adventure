@@ -2,15 +2,20 @@
     height: 800px
     padding: 100px 0px
 
-.cont
+    &__content_left
+        float: left
+        width: 750px
+        
+    &__content_right
+        float: right
+        width: 450px
+        vertical-align: bottom
+
+    &__headline
+        //font-size: 35px
+        //line-height: 35px
     
-    &-headline
-        +bold
-        text-transform: uppercase
-        font-size: 35px
-        line-height: 35px
-    
-    &-text
+    &__text
         margin: 40px 0px 0px
 
 .decor
@@ -20,42 +25,38 @@
     margin: 38px 0px
 
 .contact
-    float: right
-    background: #313030
+    background: $dark
     width: 440px
     height: 420px
     &-info
 
 .form-Feedback
-    float: left
     width: 680px
     height: 420px
-    //background: gray
     text-align: justify
     
-    &-required
+    &__required
         width: 320px
         height: 60px
         background: $light
         padding: 20px
-        border: 2px solid $light
+        border: none
         border-radius: 6px
     
-    &-dop
+    &__dop
         width: 680px
         height: 220px
         padding: 20px
         margin: 40px 0px
         background: $light
-        border: 2px solid $light
+        border: none
         border-radius: 6px
         resize: none
         outline: none
     
-    &-dop:focus
-        border: 2px solid $key
+    &__dop:focus
     
-    &-submit
+    &__submit
         width: 680px
         height: 60px
         text-transform: uppercase
@@ -72,5 +73,5 @@
 input
     outline: none
 
-input[type=text]:focus
-    border: 2px solid $key
+//input[type=text]:focus
+    //border: 2px solid $key

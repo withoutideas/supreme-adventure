@@ -1,50 +1,98 @@
+
 .projects
     padding: 100px 0px 55px
 
-.cont-projects
-
-    &-tagline
+    &__content
         text-align: center
-        +bold
-        text-transform: uppercase
-        font-size: 30px
-        line-height: 30px
-        margin-bottom: 25px 
 
-    &-text
-        text-align: center
-        font-size: 15px
+    &__headline
+        margin-bottom: 20px
 
-.decor-projects
-    width: 200px
-    height: 2px
-    background: $key
-    margin: 28px auto
+    //&__decor_top
+        //width: 800px
+        //height: 2px
+        //background: $dark
+        //margin: 0px auto 49px
 
-.toggle
+    &__decor
+        display: block
+        width: 200px
+        height: 2px
+        background: $key
+        margin: 28px auto
+
+
+.stowage
+    //overflow: hidden
     width: 550px
     display: flex
     justify-content: space-between
     margin: 0px auto 50px
 
-    &-button
+    &__button
         width: 60px
         line-height: 40px
         text-align: center
         text-decoration: none
-        +semibold
-        color: black
+        font-size: 15px
+        text-transform: uppercase
+        user-select: none
+        cursor: pointer
+
+    &-button:hover
+        //color: rgba(0, 0, 0, 0.5)
+
+    &-button.active
+        color: $key
 
 .catalog
     font-size: 0px
 
+.tabcontent 
+    display: none
+
 .project
-        display: inline-block
-        width: 370px
-        height: 280px
-        margin-right: 45px
-        margin-bottom: 45px
-        background: $light
+    display: inline-block
+    position: relative
+    width: 370px
+    height: 280px
+    margin-right: 45px
+    margin-bottom: 45px
+    background: $dark
+    overflow: hidden
+
+.appear
+    position: absolute
+    top: 0
+    left: 0
+    width: 370px
+    height: 280px
+    +semibold
+    font-size: 20px
+    text-align: center
+    line-height: 280px
+    text-transform: uppercase
+    color: white
+    opacity: 0
+    transition: opacity 500ms
+    z-index: 100
+    user-select: none
+    cursor: pointer
+
+.img
+    position: absolute
+    width: 370px
+    height: 280px
+    opacity: 1
+    transition: opacity 500ms , filter 500ms , transform 500ms 
+
+.appear:hover
+    opacity: 1
+
+.appear:hover + .img
+    opacity: 0.4
+    transform: scale(1.05)
+    filter:  grayscale(60%)
 
 .project:nth-child(3n)
     margin-right: 0px

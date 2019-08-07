@@ -5,242 +5,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бачу ТБ</title>
+    <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-
-
-
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="navbar">
-                <div class="navbar-wrap">
 
-                    <div class="logo">
-                        <strong class="logo-text">Бачу ТБ</strong>
-                    </div>
-
-                    <div class="menu">
-                        <a href="#" class="menu-button">home</a>
-                        <a href="#mailing" class="menu-button">portfolio</a>
-                        <a href="#" class="menu-button">about us</a>
-                        <a href="#link" class="menu-button">contact</a>
-                    </div>
-
-                    <div class="lang">
-                        <a href="#" class="lang-button">in</a>
-                        <a href="#" class="lang-button therein">uk</a>
-                        <a href="#" class="lang-button">ru</a>
-                    </div>
-
+                <div class="navbar__logo">
+                    <strong class="navbar__logo_text">Бачу ТБ</strong>
                 </div>
-                <!-- /.navbar-wrap -->
+                <!-- /.logo -->
+
+                <div class="navbar__menu">
+                    <a href="#header" class="navbar__menu_menu-item" id="link-header">home</a>
+                    <a href="#provide" class="navbar__menu_menu-item" id="link-provide">catalog</a>
+                    <a href="#projects"class="navbar__menu_menu-item" id="link-projects" >коталог</a>
+                    <a href="#link" class="navbar__menu_menu-item" id="link-link">contact</a>
+                </div>
+                <!-- /.menu -->
+
+                <div class="navbar__lang">
+                    <a href="#" class="navbar__lang_button active">uk</a>
+                    <a href="#" class="navbar__lang_button">in</a>
+                    <a href="#" class="navbar__lang_button">ru</a>
+                </div>
+                <!-- /.lang -->
+
             </div>
             <!-- /.navbar -->
         </div>
         <!-- /.container -->
         <div class="hero">
             <div class="container">
-                <div class="content">
+                <div class="hero__content_left">
 
-                    <div class="content-tagline">our strong<br>organaisation</div>
+                    <div class="hero__slogan">Компанія «Бачу ТБ»</div>
 
-                    <div class="content-text">
-                            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
-                        <br>tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet,
-                        <br>consectetur adipis cing elit, ed doi eiusmod tempor incididunt
-                        <br>ut labore et.
+                    <div class="hero__text regular_gray">
+                        займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.<br>
+                        Сьогоднішнє телебачення - це не просто кінцевий ринок, який зачіпає мільярди життів. Це динамічна
+                        глобальна індустрія з далекосяжними наслідками і впливом.
                     </div>
 
-                    <a href="#" class="customary-button hero-button">зворотній зв'язок</a>
+                    <a href="#link" class="customary-button customary-button_feedback">зворотній зв'язок</a>
 
                 </div>
-                
-                <div class="hook"></div>
-
+                <!-- /.hero__content_left -->
+                <div class="hero__content_right">
+                    <div class="hero__hook">
+                            <!-- 
+                            <iframe width="480" height="320" src="https://www.youtube.com/embed/GfgvJanwfds" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                             -->
+                    </div>
+                </div>
+                <!-- /.hero__content_right -->
             </div>
             <!-- /.container -->
         </div>
         <!-- /.hero -->
     </header>
     <main>
-        <div class="provide">
+        <div class="provide"  id="provide">
             <div class="container">
-                <div class="cont-provide">
-                    <div class="cont-headline">do you know we can<br>provide for you ?</div>
-                    <div class="cont-text">
+                <div class="provide__content_left">
+
+                    <div class="headline">
+                        do you know we can<br>provide for you ?
+                    </div>
+                    <!-- /.headline -->
+
+                    <div class="provide__text regular">
                             Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
                             <br>tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur
                             <br>adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
                     </div>
-                    <a href="#" class="customary-button provide-button">дізнатися більше</a>
+                    <!-- /.cont-text -->
+
+                    <a href="#" class="customary-button customary-button_more">дізнатися більше</a>
+
                 </div>
-                <!-- /.cont-provide -->
-                <div class="cont-provide">
+                <!-- /.provide__content_left -->
+                <div class="provide__content_right">
                     <div class="fourth">
-                        <img src="img/ic-movie.png" class="fourth-icon">
-                        <div class="fourth-headline">Management</div>
-                        <div class="fourth-text">
+
+                        <img src="img/icon/ic-movie.png" class="fourth__icon">
+
+                        <div class="tagline_gray">Management</div>
+                        <!-- /.fourth_headline -->
+
+                        <div class="regular_gray">
                             Lorem ipsum dolor sitea amet, zixf
                             <br>conseit  adipi cing elit, seddi do eiu
                             <br>smod btdempor in didunt utlae ore etioe.
                             <br>Lorem ipsum new idolor
                         </div>
+                        <!-- /.fourth_text -->
                     </div>
                     <!-- /.fourth -->
                     <div class="fourth">
-                        <img src="img/ic-movie.png" class="fourth-icon">
-                        <div class="fourth-headline">Management</div>
-                        <div class="fourth-text">
+
+                        <img src="img/icon/02.png" class="fourth__icon">
+
+                        <div class="tagline_gray">Management</div>
+                        <!-- /.fourth_headline -->
+
+                        <div class="regular_gray">
                             Lorem ipsum dolor sitea amet, zixf
                             <br>conseit  adipi cing elit, seddi do eiu
                             <br>smod btdempor in didunt utlae ore etioe.
                             <br>Lorem ipsum new idolor
                         </div>
+                        <!-- /.fourth_text -->
                     </div>
                     <!-- /.fourth -->
                     <div class="fourth">
-                        <img src="img/ic-movie.png" class="fourth-icon">
-                        <div class="fourth-headline">Management</div>
-                        <div class="fourth-text">
+
+                        <img src="img/icon/03.png" class="fourth__icon">
+
+                        <div class="tagline_gray">Management</div>
+                        <!-- /.fourth_headline -->
+
+                        <div class="regular_gray">
                             Lorem ipsum dolor sitea amet, zixf
                             <br>conseit  adipi cing elit, seddi do eiu
                             <br>smod btdempor in didunt utlae ore etioe.
                             <br>Lorem ipsum new idolor
                         </div>
+                        <!-- /.fourth_text -->
                     </div>
                     <!-- /.fourth -->
                      <div class="fourth">
-                        <img src="img/ic-movie.png" class="fourth-icon">
-                        <div class="fourth-headline">Management</div>
-                        <div class="fourth-text">
+
+                        <img src="img/icon/04.png" class="fourth__icon">
+
+                        <div class="tagline_gray">Management</div>
+                        <!-- /.fourth_headlinee -->
+
+                        <div class="regular_gray">
                             Lorem ipsum dolor sitea amet, zixf
                             <br>conseit  adipi cing elit, seddi do eiu
                             <br>smod btdempor in didunt utlae ore etioe.
                             <br>Lorem ipsum new idolor
                         </div>
+                        <!-- /.fourth_text -->
                     </div>
                     <!-- /.fourth -->
                 </div>
                 <!-- /.cont-provide -->
+
+
             </div>
             <!-- /.container -->
+                    <div class="provide__decor"></div>
         </div>
         <!-- /.provide -->
         <div class="aboutus">
             
         </div>
         <!-- /.aboutus -->
-        <div class="projects">
+        <div class="projects" id="projects">
             <div class="container">
-                <div class="cont-projects">
-                    <div class="cont-projects-tagline">feature products</div>
-                    <!-- /.cont-projects-tagline -->
-                    <div class="cont-projects-text">
-                        Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do<br>
-                        eiusmod tempor incididunt ut labore et.
+                <div class="projects__content">
+
+                    <div class="projects__headline headline">Наш неймовірний продукт</div>
+                    <!-- /.tagline -->
+
+                    <div class="regular_gray">
+                        Тут ви можете побачити тільки деякі позиції з нашого каталогу.<br>
+                        Ви можете відправити запит на повний каталог заповнивши форму
                     </div>
-                    <!-- /.cont-projects-text -->
-                    <div class="decor-projects"></div>
-                    <!-- /.decor-projects -->
+                    <!-- /.text -->
+
+                    <div class="projects__decor"></div>
+
                 </div>
-                <!-- /.cont -->
-                <div class="toggle">
-                    <a href="#" class="toggle-button">print</a>
-                    <a href="#" class="toggle-button">webe</a>
-                    <a href="#" class="toggle-button">user</a>
-                    <a href="#" class="toggle-button">mock</a>
+                <!-- /.projects__content -->
+                <div class="stowage">
+                    <div class="stowage__button tagline tablinks" onclick="openCity(event, 'print')" id="defaultOpen">Нові</div>
+                    <div class="stowage__button tagline tablinks" onclick="openCity(event, 'webe')">webe</div>
+                    <div class="stowage__button tagline tablinks" onclick="openCity(event, 'user')">user</div>
+                    <div class="stowage__button tagline tablinks" onclick="openCity(event, 'mock')">mock</div>
                 </div>
-                <!-- /.toggle -->
+                <!-- /.stowage -->
                 <div class="catalog">
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
+                    <div id="print" class="tabcontent">
+                        <div class="project" onclick="openup();currentSlide(1)">
+                            <div class="appear">Жінки Майдану</div>
+                            <img src="img/01.jpg" class="img" alt="">
+                            <div></div>
+                        </div>
+                        <div class="project" onclick="openup();currentSlide(2)">
+                            <div class="appear">Моя війна</div>
+                            <img src="img/02.jpg" class="img" alt="">
+                        </div>
+                        <div class="project" onclick="openup();currentSlide(3)">
+                            <div class="appear">Чорнобиль 3828</div>
+                            <img src="img/03.jpg" class="img" alt="">
+                        </div>
+                        <div class="project" onclick="openup();currentSlide(4)">
+                            <div class="appear">Сугихара, виза на жизнь</div>
+                            <img src="img/04.jpg" class="img" alt="">
+                        </div>
+                    </div>
+                    <!-- /.print -->
+                    <div id="webe" class="tabcontent">
+                        <div class="project" onclick="openup();currentSlide(1)"></div>
+                        <div class="project" onclick="openup();currentSlide(2)"></div>
+                        <div class="project" onclick="openup();currentSlide(3)"></div>
+                        <div class="project" onclick="openup();currentSlide(4)"></div>
+                        <div class="project" onclick="openup();currentSlide(5)"></div>
+                        <div class="project" onclick="openup();currentSlide(6)"></div>
+                        <div class="project" onclick="openup();currentSlide(7)"></div>
+                        <div class="project" onclick="openup();currentSlide(8)"></div>
+                        <div class="project" onclick="openup();currentSlide(9)"></div>
+                    </div>
+                    <!-- /.webe -->
+                    <div id="user" class="tabcontent">
+                        <div class="project" onclick="openup();currentSlide(1)"></div>
+                        <div class="project" onclick="openup();currentSlide(2)"></div>
+                        <div class="project" onclick="openup();currentSlide(3)"></div>
+                        <div class="project" onclick="openup();currentSlide(4)"></div>
+                        <div class="project" onclick="openup();currentSlide(5)"></div>
+                        <div class="project" onclick="openup();currentSlide(6)"></div>
+                        <div class="project" onclick="openup();currentSlide(7)"></div>
+                        <div class="project" onclick="openup();currentSlide(8)"></div>
+                        <div class="project" onclick="openup();currentSlide(9)"></div>
+                    </div>
+                    <!-- /.user -->
+                    <div id="mock" class="tabcontent">
+                        <div class="project" onclick="openup();currentSlide(1)"></div>
+                        <div class="project" onclick="openup();currentSlide(2)"></div>
+                        <div class="project" onclick="openup();currentSlide(3)"></div>
+                        <div class="project" onclick="openup();currentSlide(4)"></div>
+                        <div class="project" onclick="openup();currentSlide(5)"></div>
+                        <div class="project" onclick="openup();currentSlide(6)"></div>
+                        <div class="project" onclick="openup();currentSlide(7)"></div>
+                        <div class="project" onclick="openup();currentSlide(8)"></div>
+                        <div class="project" onclick="openup();currentSlide(9)"></div>
+                    </div>
+                    <!-- /.mock -->
                     <div class="clearfix"></div>
-                <!-- /.clearfix -->
+                    <!-- /.clearfix -->
                 </div>
                 <!-- /.catalog -->
             </div>
             <!-- /.container -->
-            <div class="b-popup">
+            <div id="upcontainer" class="upcontainer">
+                <div class="up">
+                <span class="close cursor" onclick="closeup()">&times;</span>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
+                <div class="upslides"></div>
                 
+                </div>
+                <!-- /.up -->
             </div>
-            <!-- /.b-popup -->
+            <!-- /.upcontainer -->
         </div>
         <!-- /.projects -->
-        <div class="mailing">
-            <div id="mailing" class="anchor"></div>
-            <div class="container"></div>
-                <div class="mailing-wrap">
-                    <div class="cont-mailing">
-                        <div class="cont-mailing-tagline">
-                            Design tips, tricks, and freebies. Delivered weekly.
-                        </div>
-                        <div class="cont-mailing-text">
-                            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius
-                        </div>
+        <div class="mailing" id="mailing">
+            <!-- <div id="mailing" class="anchor"></div> -->
+            <div class="container">
+                <div class="mailing__content">
+
+                    <div class="headline mailing__headline">
+                        Design tips, tricks, and freebies. Delivered weekly.
                     </div>
-                    <!-- /.cont-mailing -->
-                    <form action="" class="form-sub">
-                        <input type="text" placeholder="Email Address..." class="form-sub-required" required>
-                        <input type="submit" value="subscribe" class="form-sub-submit">
-                    </form>
-                    <!-- /.form-sub -->
+                    <!-- /.headline -->
+
+                    <div class="regular">
+                        Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius
+                    </div>
+                    <!-- /.text -->
+
                 </div>
-                <!-- /.mailing-wrap -->
+                <!-- /.mailing__content -->
+                <form action="" class="form-subscribe">
+                    <input type="text" placeholder="Email Address..." class="form-subscribe__required regular" required>
+                    <input type="submit" value="subscribe" class="form-subscribe__submit">
+                </form>
+                <!-- /.form-subscribe -->
             </div>
             <!-- /.container -->
         </div>
         <!-- /.mailing -->
     </main>
     <footer class="footer">
-        <div class="link">
+        <div class="link" id="link">
             <!-- <div id="link" class="anchor"></div> -->
             <div class="container">
-                <div class="cont">
-                    <div class="cont-headline">get in touch</div>
-                    <!-- /.cont-headline -->
-                    <div class="cont-text">
-                        Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
-                        <br>labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing
-                        <br>elit, ed doi eiusmod tempor incididunt ut labore et.
-                    </div>
-                    <!-- /.cont-text -->
-                    <div class="decor"></div>
-                    <!-- /.decor -->
+
+                <div class="headline link__headline">get in touch</div>
+
+                <div class="link__text regular_gray">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
+                    <br>labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing
+                    <br>elit, ed doi eiusmod tempor incididunt ut labore et.
                 </div>
-                <!-- /.cont -->
-                <form action="#" class="form-Feedback">
-                    <input type="text" placeholder="ім'я" class="form-Feedback-required" required>
-                    <input type="text" placeholder="Ваш емейл" class="form-Feedback-required" required>
-                    <textarea type="text" placeholder="Напишіть ваше повідомлення" class="form-Feedback-dop"></textarea>
-                    <input type="submit" value="отримати зворотній емейл" class="form-Feedback-submit">
-                </form>
-                <!-- /.form-Feedback -->
-                <div class="contact">
-                    <div class="contact-info">
+                    
+                <div class="decor"></div>
+
+                <div class="link__content_left">
+
+                    <form action="#" class="form-Feedback">
+                        <input type="text" placeholder="ім'я" class="form-Feedback__required regular" required>
+                        <input type="text" placeholder="Ваш емейл" class="form-Feedback__required regular" required>
+                        <textarea type="text" placeholder="Напишіть ваше повідомлення" class="form-Feedback__dop regular"></textarea>
+                        <input type="submit" value="отримати зворотній емейл" class="form-Feedback__submit">
+                    </form>
+
+                </div>
+                <!-- /.link__content_left -->
+                <div class="link__content_right">
+
+                    <div class="contact">
+
+                        <div class="contact-info">
+
+                        </div>
 
                     </div>
-                    <!-- /.contact-info -->
+                    <!-- /.contact -->
                 </div>
-                <!-- /.contact -->
+                <!-- /.link__content_right -->
             </div>
             <!-- /.container -->
         </div>
         <!-- /.link -->
         <div class="container">
             <div class="vault">
-                <div class="vault-reserved">© Copyright @Junaed 2016, All rights reserved.</div>
+
+                <div class="vault__text regular atop">© Copyright @Junaed 2016, All rights reserved.</div>
+
             </div>
             <!-- /.vault -->
         </div>
         <!-- /.container -->
     </footer>
+    <script src="js/in-view"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/stowage.js"></script>
+    <script src="js/up.js"></script>
 </body>
 </html>
