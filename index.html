@@ -7,9 +7,10 @@
     <title>Бачу ТБ</title>
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="https://withoutideas.github.io/supreme-adventure/CSS/style.css">
+    <!-- <link rel="stylesheet" href="https://withoutideas.github.io/supreme-adventure/CSS/style.css"> -->
 </head>
 <body>
+    <!-- <div class="conter"></div> -->
     <header class="header" id="header">
         <div class="container">
             <div class="navbar">
@@ -20,17 +21,17 @@
                 <!-- /.logo -->
 
                 <div class="navbar__menu">
-                    <a href="#header" class="navbar__menu_menu-item" id="link-header">home</a>
-                    <a href="#provide" class="navbar__menu_menu-item" id="link-provide">catalog</a>
-                    <a href="#projects"class="navbar__menu_menu-item" id="link-projects" >коталог</a>
-                    <a href="#link" class="navbar__menu_menu-item" id="link-link">contact</a>
+                    <a href="#header" class="navbar__menu_menu-item" id="link-header">головна</a>
+                    <a href="#provide" class="navbar__menu_menu-item" id="link-provide">про нас</a>
+                    <a href="#projects"class="navbar__menu_menu-item" id="link-projects" >каталог</a>
+                    <a href="#link" class="navbar__menu_menu-item" id="link-link">контакты</a>
                 </div>
                 <!-- /.menu -->
 
                 <div class="navbar__lang">
-                    <a href="#" class="navbar__lang_button active">uk</a>
-                    <a href="#" class="navbar__lang_button">in</a>
-                    <a href="#" class="navbar__lang_button">ru</a>
+                    <a href="#" class="navbar__lang_button uk active">uk</a>
+                    <a href="#" class="navbar__lang_button in">in</a>
+                    <a href="#" class="navbar__lang_button ru">ru</a>
                 </div>
                 <!-- /.lang -->
 
@@ -42,7 +43,7 @@
             <div class="container">
                 <div class="hero__content_left">
 
-                    <div class="hero__slogan">Компанія «Бачу ТБ»</div>
+                    <div class="hero__slogan">Дистриб'ютор - Бачу ТБ</div>
 
                     <div class="hero__text regular_gray">
                         займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.<br>
@@ -50,7 +51,7 @@
                         глобальна індустрія з далекосяжними наслідками і впливом.
                     </div>
 
-                    <a href="#link" class="customary-button customary-button_feedback">зворотній зв'язок</a>
+                    <a href="#link" class="customary-button_feedback customary-button">зворотній зв'язок</a>
 
                 </div>
                 <!-- /.hero__content_left -->
@@ -75,14 +76,15 @@
                 <div class="provide__content_left">
 
                     <div class="headline">
-                        do you know we can<br>provide for you ?
+                        Знаетє що ми можемо<br>вам запропонувати?
                     </div>
                     <!-- /.headline -->
 
-                    <div class="provide__text regular">
-                            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
-                            <br>tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur
-                            <br>adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
+                    <div class="provide__text regular_gray">
+                            займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.<br>
+                            Сьогоднішнє телебачення - це не просто кінцевий ринок, який зачіпає мільярди життів. Це динамічна
+                            глобальна індустрія з далекосяжними наслідками і впливом.<br>
+                            займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.
                     </div>
                     <!-- /.cont-text -->
 
@@ -172,12 +174,12 @@
             <div class="container">
                 <div class="projects__content">
 
-                    <div class="projects__headline headline">Наш неймовірний продукт</div>
+                    <div class="projects__headline headline">лише фрагмент каталогу</div>
                     <!-- /.tagline -->
 
                     <div class="regular_gray">
                         Тут ви можете побачити тільки деякі позиції з нашого каталогу.<br>
-                        Ви можете відправити запит на повний каталог заповнивши форму
+                        Ви можете відправити запит на повний каталог заповнивши форму зворотнього зв'язку
                     </div>
                     <!-- /.text -->
 
@@ -256,59 +258,79 @@
             </div>
             <!-- /.container -->
             <div id="upcontainer" class="upcontainer">
+                <div class="bg"></div>
                 <div class="up">
-                <span class="close cursor" onclick="closeup()">&times;</span>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                <div class="upslides"></div>
-                
+                    <span class="close cursor" onclick="closeup()">&times;</span>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="upSlides">
+
+                        <div class="upSlides__content_left">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WZZKRVTXHT8" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                            <div class="regular gm">
+                                Рік 2016
+                                Мова : англійська, українська
+                                (65‘51)
+                            </div>
+                        </div>
+
+                        <div class="upSlides__content_right">
+                            <div class="regular gm">Документальний фільм "Жінки Майдану" розповідає історію жінок під час Революції Гідності.
+Взимку 2013-2014 років жінки стали стержнем руху і великою підтримкою, що дало змогу тисячам людей вистояти на Майдані Незалежності та
+протидіяти жорстоким атакам спецрозділів і тодішньої влади, витримати поранення та пройти через хвороби.
+Заради гідності своєї нації та нового майбутнього для країни, їхня сила змогла прогнати закорінену політичну систему.
+Перша прем’єра була на Woodstock Film Festival, і він був номінований на найкращу документальну
+стрічку. Потім ще кілька фестивалів. В квітні він зайняв перше місце на Fort Myers Film Festival у
+Флориді.</div>
+                        </div>
+
+                    </div>
+                    <div class="upSlides">
+                            <iframe width="480" height="320" src="https://www.youtube.com/embed/GfgvJanwfds" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="upSlides"></div>
+                    <div class="upSlides"></div>
+                    <div class="upSlides"></div>
+                    <div class="upSlides"></div>
+                    <div class="upSlides"></div>
+                    <div class="upSlides"></div>
+                    <div class="upSlides"></div>
                 </div>
                 <!-- /.up -->
+                
             </div>
             <!-- /.upcontainer -->
         </div>
         <!-- /.projects -->
-        <div class="mailing" id="mailing">
-            <!-- <div id="mailing" class="anchor"></div> -->
+        <!-- <div class="mailing" id="mailing">
             <div class="container">
                 <div class="mailing__content">
 
                     <div class="headline mailing__headline">
                         Design tips, tricks, and freebies. Delivered weekly.
-                    </div>
-                    <!-- /.headline -->
 
                     <div class="regular">
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius
-                    </div>
-                    <!-- /.text -->
 
                 </div>
-                <!-- /.mailing__content -->
                 <form action="" class="form-subscribe">
                     <input type="text" placeholder="Email Address..." class="form-subscribe__required regular" required>
                     <input type="submit" value="subscribe" class="form-subscribe__submit">
                 </form>
-                <!-- /.form-subscribe -->
             </div>
-            <!-- /.container -->
         </div>
-        <!-- /.mailing -->
+        /.mailing -->
     </main>
     <footer class="footer">
         <div class="link" id="link">
             <!-- <div id="link" class="anchor"></div> -->
             <div class="container">
 
-                <div class="headline link__headline">get in touch</div>
+                <div class="headline link__headline">замовте зворотній емейл з каталогом</div>
 
                 <div class="link__text regular_gray">
                     Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
@@ -321,10 +343,10 @@
                 <div class="link__content_left">
 
                     <form action="#" class="form-Feedback">
-                        <input type="text" placeholder="ім'я" class="form-Feedback__required regular" required>
+                        <input type="text" placeholder="Ваше ім'я" class="form-Feedback__required regular" required>
                         <input type="text" placeholder="Ваш емейл" class="form-Feedback__required regular" required>
-                        <textarea type="text" placeholder="Напишіть ваше повідомлення" class="form-Feedback__dop regular"></textarea>
-                        <input type="submit" value="отримати зворотній емейл" class="form-Feedback__submit">
+                        <textarea type="text" placeholder="Назва вашої організації, потреби, побажаня" class="form-Feedback__dop regular" required></textarea>
+                        <input value="отримати зворотній емейл" type="submit" class="form-Feedback__submit">
                     </form>
 
                 </div>
@@ -333,9 +355,11 @@
 
                     <div class="contact">
 
-                        <div class="contact-info">
-
-                        </div>
+                        <div class="contact__info tagline atop">контакты</div>
+                        <div class="regular atop">Украина, Киев, ул Саксаганского 6</div>
+                        <div class="regular atop">(+88) 017 617 46373</div>
+                        <div class="regular atop">(+88) 017 617 46373</div>
+                        <div class="regular atop">redwan@deviserweb.com</div>
 
                     </div>
                     <!-- /.contact -->
@@ -359,5 +383,6 @@
     <script src="js/scroll.js"></script>
     <script src="js/stowage.js"></script>
     <script src="js/up.js"></script>
+    <script src="js/conter.js"></script>
 </body>
 </html>

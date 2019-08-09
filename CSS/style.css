@@ -14,6 +14,10 @@ body {
   margin: auto;
 }
 
+.container_white {
+  background: white;
+}
+
 @font-face {
   font-family: 'Open Sans Regular';
   src: url("../fonts/");
@@ -54,6 +58,15 @@ body {
   color: #f6f2f1;
 }
 
+.conter {
+  z-index: -5;
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background: #312f30;
+  opacity: 0.8;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -62,25 +75,33 @@ html {
   font-family: 'Open Sans Bold', sans-serif;
   text-transform: uppercase;
   font-size: 30px;
+  line-height: 45px;
+  color: #312f30;
 }
 
 .tagline {
   font-family: 'Open Sans Semibold', sans-serif;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .tagline_gray {
   font-family: 'Open Sans Semibold', sans-serif;
   font-size: 20px;
+  line-height: 30px;
   color: gray;
 }
 
 .regular {
   font-family: 'Open Sans Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .regular_gray {
   font-family: 'Open Sans Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   color: gray;
 }
 
@@ -93,12 +114,12 @@ html {
 }
 
 .customary-button {
-  display: inline-block;
+  display: block;
   width: 190px;
   height: 50px;
   text-decoration: none;
-  text-transform: uppercase;
   font-family: 'Open Sans Semibold', sans-serif;
+  text-transform: uppercase;
   font-size: 15px;
   text-align: center;
   border-radius: 6px;
@@ -107,8 +128,7 @@ html {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
-  position: relative;
-  bottom: 0;
+  background: white;
 }
 
 .customary-button_feedback {
@@ -130,6 +150,7 @@ html {
 
 .navbar {
   position: fixed;
+  z-index: 12;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   top: 0%;
@@ -143,7 +164,6 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #312f30;
-  z-index: 100000;
 }
 
 .navbar__logo {
@@ -175,7 +195,7 @@ html {
 .navbar__menu_menu-item {
   width: 80px;
   height: 80px;
-  font-family: 'Open Sans Semibold', sans-serif;
+  font-family: 'Open Sans Bold', sans-serif;
   font-size: 12px;
   line-height: 80px;
   color: #f6f2f1;
@@ -201,9 +221,10 @@ html {
 }
 
 .navbar__lang_button {
-  width: 28px;
+  display: block;
+  width: 30px;
   height: 30px;
-  font-family: 'Open Sans Bold', sans-serif;
+  font-family: 'Open Sans ExtraBold', sans-serif;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -213,7 +234,48 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 1;
   color: #f6f2f1;
+}
+
+.uk:hover {
+  background: url("/img/ukraine.png");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+
+.ru:hover {
+  background: url("/img/russia.png");
+  background-position: 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+
+.in:hover {
+  background: url("/img/anguilla.png");
+  background-position: 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
 }
 
 .is-active {
@@ -242,14 +304,13 @@ html {
 
 .hero__slogan {
   font-family: 'Open Sans ExtraBold', sans-serif;
-  text-transform: uppercase;
-  font-size: 50px;
-  line-height: 50px;
-  width: 600px;
+  font-size: 45px;
+  line-height: 67.5px;
+  color: #312f30;
 }
 
 .hero__text {
-  margin: 20px 0px 20px;
+  margin: 15px 0px 25px;
 }
 
 .hero__hook {
@@ -269,6 +330,7 @@ html {
   float: left;
   width: 600px;
   height: 400px;
+  position: relative;
 }
 
 .provide__content_right {
@@ -278,7 +340,7 @@ html {
 }
 
 .provide__text {
-  margin: 20px 0px 60px;
+  margin: 20px 0px 25px;
 }
 
 .provide__decor {
@@ -298,6 +360,8 @@ html {
 .fourth__icon {
   width: 36px;
   height: 36px;
+  -webkit-filter: saturate(3);
+          filter: saturate(3);
 }
 
 .projects {
@@ -383,7 +447,7 @@ html {
   opacity: 0;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
-  z-index: 100;
+  z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -407,11 +471,11 @@ html {
 }
 
 .appear:hover + .img {
-  opacity: 0.4;
+  opacity: 0.2;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-filter: grayscale(60%);
-          filter: grayscale(60%);
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
 }
 
 .project:nth-child(3n) {
@@ -426,8 +490,7 @@ html {
 .upcontainer {
   display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
+  z-index: 25;
   left: 0;
   top: 0;
   width: 100%;
@@ -435,22 +498,32 @@ html {
   overflow: auto;
 }
 
-.up {
-  position: relative;
-  width: 920px;
-  height: 600px;
-  background: white;
-  margin: auto;
-  padding: 100px 50px;
+.bg {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background: black;
+  opacity: 0.8;
 }
 
-/* Modal Content */
+.up {
+  position: fixed;
+  width: 1300px;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 100px 50px;
+  z-index: 25;
+}
+
 /* The Close Button */
 .close {
   color: #ff3f40;
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: 100px;
+  right: 0px;
   font-size: 35px;
   font-weight: bold;
 }
@@ -463,8 +536,22 @@ html {
 }
 
 /* Hide the slides by default */
-.mySlides {
+.upSlides {
   display: none;
+}
+
+.upSlides__content_left {
+  width: 600px;
+  float: left;
+}
+
+.upSlides__content_right {
+  width: 600px;
+  float: right;
+}
+
+.gm {
+  color: white;
 }
 
 /* Next & previous buttons */
@@ -489,6 +576,11 @@ html {
 }
 
 /* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -508,18 +600,9 @@ html {
   color: white;
 }
 
-img.demo {
-  opacity: 0.6;
-}
-
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-.project {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .mailing {
@@ -599,16 +682,17 @@ img.demo {
 .link__content_left {
   float: left;
   width: 750px;
+  height: 420px;
 }
 
 .link__content_right {
   float: right;
   width: 450px;
-  vertical-align: bottom;
+  height: 420px;
 }
 
 .link__text {
-  margin: 40px 0px 0px;
+  margin: 20px 0px 0px;
 }
 
 .decor {
@@ -616,12 +700,6 @@ img.demo {
   height: 2px;
   background: #ff3f40;
   margin: 38px 0px;
-}
-
-.contact {
-  background: #312f30;
-  width: 440px;
-  height: 420px;
 }
 
 .form-Feedback {
@@ -634,39 +712,77 @@ img.demo {
   width: 320px;
   height: 60px;
   background: #f6f2f1;
-  padding: 20px;
   border: none;
   border-radius: 6px;
+  padding: 20px;
+}
+
+.form-Feedback__required:focus {
+  border: 2px solid #f6f2f1;
+  background: white;
+  padding: 20px 18px;
 }
 
 .form-Feedback__dop {
   width: 680px;
   height: 220px;
-  padding: 20px;
-  margin: 40px 0px;
   background: #f6f2f1;
   border: none;
   border-radius: 6px;
+  padding: 20px;
+  margin: 40px 0px 36px;
   resize: none;
   outline: none;
+}
+
+.form-Feedback__dop:focus {
+  border: 2px solid #f6f2f1;
+  background: white;
+  padding: 18px 18px;
 }
 
 .form-Feedback__submit {
   width: 680px;
   height: 60px;
-  text-transform: uppercase;
-  font-family: 'Open Sans Semibold', sans-serif;
-  font-size: 15px;
-  line-height: 46px;
-  text-align: center;
-  border-radius: 6px;
   background: #ff3f40;
+  font-family: 'Open Sans Semibold', sans-serif;
   color: #f6f2f1;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 60px;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  border: 2px solid #ff3f40;
+  padding: 0px;
 }
 
 input {
   outline: none;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #312f30;
+  padding: 120px 60px;
+}
+
+.contact__info {
+  margin-bottom: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=style.css.map */

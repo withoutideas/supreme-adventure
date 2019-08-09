@@ -1,92 +1,103 @@
 .upcontainer
-  display: none
-  position: fixed
-  z-index: 1
-  padding-top: 100px
-  left: 0
-  top: 0
-  width: 100%
-  min-height: 100%
-  overflow: auto
-    
+    display: none
+    position: fixed
+    z-index: 25
+    left: 0
+    top: 0
+    width: 100%
+    min-height: 100%
+    overflow: auto
+  
+.bg
+    position: fixed
+    width: 100%
+    min-height: 100%
+    background: black
+    opacity: 0.8
+
 .up
-  position: relative
-  width: 920px
-  height: 600px
-  background: white
-  margin: auto
-  padding: 100px 50px
-/* Modal Content */
+    position: fixed
+    width: 1300px
+    height: 100%
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+    padding: 100px 50px
+    z-index: 25
 
 /* The Close Button */
 .close 
-  color: $key
-  position: absolute
-  top: 10px
-  right: 25px
-  font-size: 35px
-  font-weight: bold
+    color: $key
+    position: absolute
+    top: 100px
+    right: 0px
+    font-size: 35px
+    font-weight: bold
 
 
 .close:hover,
 .close:focus 
-  color: $key
-  text-decoration: none
-  cursor: pointer
+    color: $key
+    text-decoration: none
+    cursor: pointer
 
 
 /* Hide the slides by default */
-.mySlides 
-  display: none
+.upSlides 
+    display: none
 
+    &__content_left
+        width: 600px
+        float: left
 
+    &__content_right
+        width: 600px
+        float: right
+
+.gm
+    color: white
 /* Next & previous buttons */
 .prev,
 .next 
-  cursor: pointer
-  position: absolute
-  top: 50%
-  width: auto
-  padding: 16px
-  margin-top: -50px
-  color: $key
-  font-weight: bold
-  font-size: 20px
-  transition: 0.6s ease
-  border-radius: 0 3px 3px 0
-  user-select: none
-  -webkit-user-select: none
+    cursor: pointer
+    position: absolute
+    top: 50%
+    width: auto
+    padding: 16px
+    margin-top: -50px
+    color: $key
+    font-weight: bold
+    font-size: 20px
+    transition: 0.6s ease
+    border-radius: 0 3px 3px 0
+    user-select: none
+    -webkit-user-select: none
 
 
 /* Position the "next button" to the right */
+
+.prev
+    left: 0
+    border-radius: 3px 0 0 3px
+
 .next
-  right: 0
-  border-radius: 3px 0 0 3px
+    right: 0
+    border-radius: 3px 0 0 3px
 
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover
-  background-color: rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, 0.4)
 
 /* Caption text */
 .caption-container 
-  text-align: center
-  background-color: black
-  padding: 2px 16px
-  color: white
-
-
-img.demo 
-  opacity: 0.6
-
+    text-align: center
+    background-color: black
+    padding: 2px 16px
+    color: white
 
 .active,
 .demo:hover
-  opacity: 1
-
-
-.project
-  transition: 0.3s
-
+    opacity: 1
 

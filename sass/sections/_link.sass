@@ -5,30 +5,26 @@
     &__content_left
         float: left
         width: 750px
-        
+        height: 420px
+
     &__content_right
         float: right
         width: 450px
-        vertical-align: bottom
+        height: 420px
 
     &__headline
         //font-size: 35px
         //line-height: 35px
     
     &__text
-        margin: 40px 0px 0px
+        margin: 20px 0px 0px
+        
 
 .decor
     width: 120px
     height: 2px
     background: $key
     margin: 38px 0px
-
-.contact
-    background: $dark
-    width: 440px
-    height: 420px
-    &-info
 
 .form-Feedback
     width: 680px
@@ -39,39 +35,58 @@
         width: 320px
         height: 60px
         background: $light
-        padding: 20px
         border: none
         border-radius: 6px
+        padding: 20px
     
+    &__required:focus
+        border: 2px solid $light
+        background: white
+        padding: 20px 18px
+
     &__dop
         width: 680px
         height: 220px
-        padding: 20px
-        margin: 40px 0px
         background: $light
         border: none
         border-radius: 6px
+        padding: 20px
+        margin: 40px 0px 36px
         resize: none
         outline: none
     
     &__dop:focus
+        border: 2px solid $light
+        background: white
+        padding: 18px 18px
     
     &__submit
         width: 680px
         height: 60px
-        text-transform: uppercase
-        +semibold
-        font-size: 15px
-        line-height: 46px
-        text-align: center
-        border-radius: 6px
         background: $key
+        +semibold
         color: $light
+        text-transform: uppercase
+        font-size: 15px
+        line-height: 60px
+        text-align: center
+        border: none
+        border-radius: 6px
         cursor: pointer
-        border: 2px solid $key
+        padding: 0px
 
 input
     outline: none
 
-//input[type=text]:focus
-    //border: 2px solid $key
+.contact
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: $dark
+    padding: 120px 60px
+
+    &__info
+        margin-bottom: 15px
+        user-select: none

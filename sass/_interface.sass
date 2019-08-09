@@ -1,5 +1,13 @@
 body
 
+.conter
+    z-index: -5
+    position: fixed
+    width: 100%
+    min-height: 100%
+    background: $dark
+    opacity: 0.8
+
 html
     scroll-behavior: smooth
 
@@ -7,26 +15,29 @@ html
     +bold
     text-transform: uppercase
     font-size: 30px
-    line-height:
+    line-height: 45px
+    color: $dark
 
 .tagline
     +semibold
     font-size: 20px
-    line-height:
+    line-height: 30px
     
     &_gray
         +semibold
         font-size: 20px
-        line-height:
+        line-height: 30px
         color: gray
 
 .regular
     +regular
-    line-height:
+    font-size: 16px
+    line-height: 24px
     
     &_gray
         +regular
-        line-height:
+        font-size: 16px
+        line-height: 24px
         color: gray
 
 .atop
@@ -36,19 +47,21 @@ html
    color: $key !important
 
 .customary-button
-    display: inline-block
+    display: block
     width: 190px
     height: 50px
     text-decoration: none
-    text-transform: uppercase
     +semibold
+    text-transform: uppercase
     font-size: 15px
     text-align: center
     border-radius: 6px
     user-select: none
     cursor: pointer
-    position: relative
-    bottom: 0
+    //position: absolute
+    //left: 0px
+    //bottom: 0px
+    background: white
 
     &_feedback
         background: $key

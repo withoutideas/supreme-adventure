@@ -1,5 +1,6 @@
 .navbar
     position: fixed
+    z-index: 12
     transform: translate(-50%, -0)
     top: 0%
     left: 50%
@@ -8,7 +9,6 @@
     display: flex
     justify-content: space-between
     background: $dark
-    z-index: 100000
 
     &__logo
         display: flex
@@ -30,7 +30,7 @@
         &_menu-item
             width: 80px
             height: 80px
-            +semibold
+            +bold
             font-size: 12px
             line-height: 80px
             color: $light
@@ -48,17 +48,59 @@
         padding: 0px 41px
 
         &_button
-            width: 28px
+            display: block
+            width: 30px
             height: 30px
-            +bold
+            +extrabold
             font-size: 18px
             line-height: 30px
             text-transform: uppercase
             text-decoration: none
             text-align: center
             user-select: none
-            color: $light
             //opacity: 0.5
+            z-index: 1
+            color: $light
+
+.uk:hover
+    background: url('/img/ukraine.png')
+    background-repeat: repeat-x
+    background-position: 0 0
+    text-transform: uppercase
+    text-align: center
+    color: transparent
+    -webkit-font-smoothing: antialiased
+    -webkit-background-clip: text
+    -moz-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    background-size: cover
+
+.ru:hover
+    background: url('/img/russia.png')
+    background-position: 0 0
+    text-transform: uppercase
+    text-align: center
+    color: transparent
+    -webkit-font-smoothing: antialiased
+    -webkit-background-clip: text
+    -moz-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    background-size: cover
+
+.in:hover
+    background: url('/img/anguilla.png')
+    background-position: 0 0
+    text-transform: uppercase
+    text-align: center
+    color: transparent
+    -webkit-font-smoothing: antialiased
+    -webkit-background-clip: text
+    -moz-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    background-size: cover
 
 .is-active
     background: $key

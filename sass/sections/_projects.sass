@@ -75,7 +75,7 @@
     color: white
     opacity: 0
     transition: opacity 500ms
-    z-index: 100
+    z-index: 1
     user-select: none
     cursor: pointer
 
@@ -89,10 +89,16 @@
 .appear:hover
     opacity: 1
 
+.appear:active
+
+.appear:target
+
+
+
 .appear:hover + .img
-    opacity: 0.4
+    opacity: 0.2
     transform: scale(1.05)
-    filter:  grayscale(60%)
+    filter:  grayscale(40%)
 
 .project:nth-child(3n)
     margin-right: 0px
