@@ -1,11 +1,19 @@
 .aboutus
     height: 800px
+    position: relative
+    //top: -800px
+    z-index: 0
+    transition: 500ms
     
     &-content
         display: grid
         grid-template-columns: repeat(2,1fr)
 
     &__fourth
-        text-align: center
         width: 600px
         height: 300px
+        padding: 20px
+    &__tagline
+        margin-bottom: 10px
+
+    &__text

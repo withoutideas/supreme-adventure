@@ -47,3 +47,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+function viewDiv(){
+  document.getElementById("div1").style.top = "0px";
+  document.getElementById("close").style.top = "0px";
+};
+
+function closeDiv(){
+  document.getElementById("div1").style.top = "-800px";
+};

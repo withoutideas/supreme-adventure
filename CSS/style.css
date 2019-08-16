@@ -99,6 +99,7 @@ html {
   line-height: 30px;
   color: white;
   padding-bottom: 20px;
+  margin-left: 40px;
 }
 
 .regular {
@@ -297,6 +298,8 @@ html {
 
 .provide {
   height: 562px;
+  z-index: 2;
+  position: relative;
 }
 
 .provide-content {
@@ -345,6 +348,10 @@ html {
 
 .aboutus {
   height: 800px;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .aboutus-content {
@@ -355,9 +362,13 @@ html {
 }
 
 .aboutus__fourth {
-  text-align: center;
   width: 600px;
   height: 300px;
+  padding: 20px;
+}
+
+.aboutus__tagline {
+  margin-bottom: 10px;
 }
 
 .projects {
@@ -381,7 +392,7 @@ html {
 }
 
 .stowage {
-  width: 550px;
+  width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,6 +571,8 @@ html {
 
 iframe {
   float: right;
+  width: 560px;
+  height: 350px;
 }
 
 .gm {
