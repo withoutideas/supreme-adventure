@@ -547,6 +547,7 @@ html {
   width: 600px;
   height: 500px;
   float: left;
+  border-right: 1px solid #ff3f40;
   padding-right: 39px;
 }
 
@@ -554,6 +555,7 @@ html {
   width: 600px;
   height: 500px;
   float: right;
+  border-left: 1px solid #ff3f40;
 }
 
 iframe {
