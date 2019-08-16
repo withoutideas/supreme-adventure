@@ -1,12 +1,5 @@
 body
 
-.conter
-    z-index: -5
-    position: fixed
-    width: 100%
-    min-height: 100%
-    background: $dark
-    opacity: 0.8
 
 html
     scroll-behavior: smooth
@@ -18,6 +11,15 @@ html
     line-height: 45px
     color: $dark
 
+    &_gm
+        +bold
+        text-transform: uppercase
+        font-size: 30px
+        line-height: 45px
+        color: $key
+        padding-bottom: 20px
+        //text-align: center
+
 .tagline
     +semibold
     font-size: 20px
@@ -28,6 +30,13 @@ html
         font-size: 20px
         line-height: 30px
         color: gray
+    
+    &_gm  
+        +semibold
+        font-size: 20px
+        line-height: 30px
+        color: white
+        padding-bottom: 20px
 
 .regular
     +regular
@@ -50,6 +59,7 @@ html
     display: block
     width: 190px
     height: 50px
+    background: white
     text-decoration: none
     +semibold
     text-transform: uppercase
@@ -61,7 +71,6 @@ html
     //position: absolute
     //left: 0px
     //bottom: 0px
-    background: white
 
     &_feedback
         background: $key

@@ -6,87 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бачу ТБ</title>
     <link rel="stylesheet" href="/CSS/normalize.css">
-    <!--<link rel="stylesheet" href="/CSS/style.css">-->
-    <link rel="stylesheet" href="https://withoutideas.github.io/supreme-adventure/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- <link rel="stylesheet" href="https://withoutideas.github.io/supreme-adventure/CSS/style.css"> -->
 </head>
 <body>
-    <!-- <div class="conter"></div> -->
     <header class="header" id="header">
         <div class="container">
             <div class="navbar">
 
-                <div class="navbar__logo">
-                    <strong class="navbar__logo_text">Бачу ТБ</strong>
+                <div class="navbar-logo">
+                    <div class="navbar-logo__text">Бачу ТБ</div>
                 </div>
-                <!-- /.logo -->
 
-                <div class="navbar__menu">
-                    <a href="#header" class="navbar__menu_menu-item" id="link-header">головна</a>
-                    <a href="#provide" class="navbar__menu_menu-item" id="link-provide">про нас</a>
-                    <a href="#projects"class="navbar__menu_menu-item" id="link-projects" >каталог</a>
-                    <a href="#link" class="navbar__menu_menu-item" id="link-link">контакты</a>
+                <div class="navbar-menu">
+                    <a href="#header" class="navbar-menu__item" id="link-header">головна</a>
+                    <a href="#provide" class="navbar-menu__item" id="link-provide">про нас</a>
+                    <a href="#projects"class="navbar-menu__item" id="link-projects" >каталог</a>
+                    <a href="#link" class="navbar-menu__item" id="link-link">контакты</a>
                 </div>
-                <!-- /.menu -->
 
-                <div class="navbar__lang">
-                    <a href="#" class="navbar__lang_button uk active">uk</a>
-                    <a href="#" class="navbar__lang_button in">in</a>
-                    <a href="#" class="navbar__lang_button ru">ru</a>
+                <div class="navbar-lang">
+                    <a href="#" class="navbar-lang__button active">uk</a>
+                    <a href="#" class="navbar-lang__button">in</a>
                 </div>
-                <!-- /.lang -->
 
             </div>
             <!-- /.navbar -->
         </div>
         <!-- /.container -->
-        <div class="hero">
-            <div class="container">
+        <section class="section hero">
+            <div class="container hero-content">
                 <div class="hero__content_left">
 
-                    <div class="hero__slogan">Дистриб'ютор - Бачу ТБ</div>
+                    <strong class="hero__slogan">
+                        Компанія - Бачу ТБ
+                    </strong>
 
-                    <div class="hero__text regular_gray">
-                        займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.<br>
-                        Сьогоднішнє телебачення - це не просто кінцевий ринок, який зачіпає мільярди життів. Це динамічна
-                        глобальна індустрія з далекосяжними наслідками і впливом.
-                    </div>
+                    <pre class="hero__text regular_gray">
+ Займається дистрибуцією телевізійного контенту для українських
+і зарубіжних телеканалів.
+Сьогоднішнє телебачення - це не просто кінцевий ринок, який
+зачіпає мільярди життів. Це динамічна глобальна індустрія
+з далекосяжними наслідками і впливом.</pre>
 
                     <a href="#link" class="customary-button_feedback customary-button">зворотній зв'язок</a>
 
                 </div>
                 <!-- /.hero__content_left -->
                 <div class="hero__content_right">
+
                     <div class="hero__hook">
-                            <!-- 
-                            <iframe width="480" height="320" src="https://www.youtube.com/embed/GfgvJanwfds" 
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen></iframe>
-                             -->
                     </div>
+
                 </div>
                 <!-- /.hero__content_right -->
             </div>
             <!-- /.container -->
-        </div>
-        <!-- /.hero -->
+        </section>
+        <!-- /.section hero -->
     </header>
     <main>
-        <div class="provide"  id="provide">
-            <div class="container">
+        <section class="section provide"  id="provide">
+            <div class="container provide-content">
                 <div class="provide__content_left">
 
-                    <div class="headline">
+                    <strong class="headline">
                         Знаетє що ми можемо<br>вам запропонувати?
-                    </div>
-                    <!-- /.headline -->
+                    </strong>
 
-                    <div class="provide__text regular_gray">
-                            займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.<br>
-                            Сьогоднішнє телебачення - це не просто кінцевий ринок, який зачіпає мільярди життів. Це динамічна
-                            глобальна індустрія з далекосяжними наслідками і впливом.<br>
-                            займається дистрибуцією телевізійного контенту для українських і зарубіжних телеканалів.
-                    </div>
-                    <!-- /.cont-text -->
+                    <pre class="provide__text regular_gray">
+ займається дистрибуцією телевізійного контенту для українських і
+зарубіжних телеканалів.
+ Сьогоднішнє телебачення - це не просто кінцевий ринок, який
+зачіпає мільярди життів. Це динамічна
+глобальна індустрія з далекосяжними наслідками і впливом.
+ займається дистрибуцією телевізійного контенту для українських і
+зарубіжних телеканалів.</pre>
 
                     <a href="#" class="customary-button customary-button_more">дізнатися більше</a>
 
@@ -95,58 +90,53 @@
                 <div class="provide__content_right">
                     <div class="fourth">
 
-                        <img src="img/icon/ic-movie.png" class="fourth__icon">
+                        <svg viewBox="0 0 48 48" class="fourth__icon">
+                            <path d="M40 12H24l-4-4H8c-2.21 0-3.98 1.79-3.98 4L4 36c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V16c0-2.21-1.79-4-4-4zm-2 16h-6v6h-4v-6h-6v-4h6v-6h4v6h6v4z"/>
+                        </svg>
 
-                        <div class="tagline_gray">Management</div>
-                        <!-- /.fourth_headline -->
+                        <div class="tagline_gray">Каталог</div>
 
                         <div class="regular_gray">
-                            Lorem ipsum dolor sitea amet, zixf
-                            <br>conseit  adipi cing elit, seddi do eiu
-                            <br>smod btdempor in didunt utlae ore etioe.
-                            <br>Lorem ipsum new idolor
+                            В каталозі компанії переважно документальні, публіцистичні, історичні, соціальні, дитячі проекти українського виробництва.
                         </div>
-                        <!-- /.fourth_text -->
+
                     </div>
                     <!-- /.fourth -->
                     <div class="fourth">
 
-                        <img src="img/icon/02.png" class="fourth__icon">
+                        <svg viewBox="0 0 48 48" class="fourth__icon">
+                            <path d="M40 16H8v-4h32v4zM36 4H12v4h24V4zm8 20v16c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4V24c0-2.21 1.79-4 4-4h32c2.21 0 4 1.79 4 4zm-12 8l-12-6.53v13.06L32 32z"/>
+                        </svg>
 
                         <div class="tagline_gray">Management</div>
-                        <!-- /.fourth_headline -->
 
                         <div class="regular_gray">
-                            Lorem ipsum dolor sitea amet, zixf
-                            <br>conseit  adipi cing elit, seddi do eiu
-                            <br>smod btdempor in didunt utlae ore etioe.
-                            <br>Lorem ipsum new idolor
+                            Разом зі Студією «ТЕЛЕКОН» Компанія «Бачу ТБ» вже декілька років створює та розвиває YouTube канал «1986.04.26 Post Scriptum»
                         </div>
-                        <!-- /.fourth_text -->
+
                     </div>
                     <!-- /.fourth -->
                     <div class="fourth">
 
-                        <img src="img/icon/03.png" class="fourth__icon">
+                        <svg viewBox="0 0 48 48" class="fourth__icon">
+                            <path d="M16 20h-6v-6H6v6H0v4h6v6h4v-6h6v-4zm20 2c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-.64 0-1.25.1-1.83.29 1.13 1.62 1.81 3.59 1.81 5.71s-.68 4.09-1.81 5.71c.58.19 1.19.29 1.83.29zm-10 0c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-3.31 0-6 2.69-6 6s2.69 6 6 6zm13.24 4.32C40.9 27.77 42 29.64 42 32v4h6v-4c0-3.08-4.75-4.97-8.76-5.68zM26 26c-4 0-12 2-12 6v4h24v-4c0-4-8-6-12-6z"/>
+                        </svg>
 
                         <div class="tagline_gray">Management</div>
-                        <!-- /.fourth_headline -->
 
                         <div class="regular_gray">
-                            Lorem ipsum dolor sitea amet, zixf
-                            <br>conseit  adipi cing elit, seddi do eiu
-                            <br>smod btdempor in didunt utlae ore etioe.
-                            <br>Lorem ipsum new idolor
+                            Разом з благодійним фондом «ДАР» пропонує соціальні проекти. Більш детально можна переглянути тут:
                         </div>
-                        <!-- /.fourth_text -->
+
                     </div>
                     <!-- /.fourth -->
                      <div class="fourth">
-
-                        <img src="img/icon/04.png" class="fourth__icon">
+                         
+                        <svg viewBox="0 0 48 48" class="fourth__icon">
+                            <path d="M10 26.36v8L24 42l14-7.64v-8L24 34l-14-7.64zM24 6L2 18l22 12 18-9.82V34h4V18L24 6z"/>
+                        </svg>
 
                         <div class="tagline_gray">Management</div>
-                        <!-- /.fourth_headlinee -->
 
                         <div class="regular_gray">
                             Lorem ipsum dolor sitea amet, zixf
@@ -154,39 +144,74 @@
                             <br>smod btdempor in didunt utlae ore etioe.
                             <br>Lorem ipsum new idolor
                         </div>
-                        <!-- /.fourth_text -->
+
                     </div>
                     <!-- /.fourth -->
                 </div>
-                <!-- /.cont-provide -->
+                <!-- /.provide__content_right -->
 
 
             </div>
             <!-- /.container -->
+
                     <div class="provide__decor"></div>
-        </div>
-        <!-- /.provide -->
-        <div class="aboutus">
-            
-        </div>
-        <!-- /.aboutus -->
-        <div class="projects" id="projects">
+
+        </section>
+        <!-- /.section provide -->
+        <section class="section aboutus">
+            <div class="container aboutus-content">
+                <div class="aboutus__fourth">
+                    <div class="aboutus__tagline tagline">
+                        Каталог
+                    </div>
+                    <div class="aboutus__text text">
+
+                    </div>
+                </div>
+                <div class="aboutus__fourth">
+                    <div class="aboutus__tagline tagline">
+                        Каталог
+                    </div>
+                    <div class="aboutus__text text">
+
+                    </div>
+                </div>
+                <div class="aboutus__fourth">
+                    <div class="aboutus__tagline tagline">
+                        Каталог
+                    </div>
+                    <div class="aboutus__text text">
+
+                    </div>
+                </div>
+                <div class="aboutus__fourth">
+                    <div class="aboutus__tagline tagline">
+                        Каталог
+                    </div>
+                    <div class="aboutus__text text">
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section aboutus -->
+        <section class="section projects" id="projects">
             <div class="container">
                 <div class="projects__content">
 
                     <div class="projects__headline headline">лише фрагмент каталогу</div>
-                    <!-- /.tagline -->
 
                     <div class="regular_gray">
                         Тут ви можете побачити тільки деякі позиції з нашого каталогу.<br>
                         Ви можете відправити запит на повний каталог заповнивши форму зворотнього зв'язку
                     </div>
-                    <!-- /.text -->
 
-                    <div class="projects__decor"></div>
+                    <div class="projects__decor" id="antichrist"></div>
 
                 </div>
                 <!-- /.projects__content -->
+
                 <div class="stowage">
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'print')" id="defaultOpen">Нові</div>
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'webe')">webe</div>
@@ -194,28 +219,59 @@
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'mock')">mock</div>
                 </div>
                 <!-- /.stowage -->
+
                 <div class="catalog">
                     <div id="print" class="tabcontent">
-                        <div class="project" onclick="openup();currentSlide(1)">
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(1)">
                             <div class="appear">Жінки Майдану</div>
                             <img src="img/01.jpg" class="img" alt="">
-                            <div></div>
                         </div>
-                        <div class="project" onclick="openup();currentSlide(2)">
+                        
+                        <div class="project" onclick="openup();antichrist();currentSlide(2)">
                             <div class="appear">Моя війна</div>
                             <img src="img/02.jpg" class="img" alt="">
                         </div>
-                        <div class="project" onclick="openup();currentSlide(3)">
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(3)">
                             <div class="appear">Чорнобиль 3828</div>
                             <img src="img/03.jpg" class="img" alt="">
                         </div>
-                        <div class="project" onclick="openup();currentSlide(4)">
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(4)">
                             <div class="appear">Сугихара, виза на жизнь</div>
                             <img src="img/04.jpg" class="img" alt="">
                         </div>
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(5)">
+                            <div class="appear">Жінки Майдану</div>
+                            <img src="img/01.jpg" class="img" alt="">
+                        </div>
+                        
+                        <div class="project" onclick="openup();antichrist();currentSlide(6)">
+                            <div class="appear">Моя війна</div>
+                            <img src="img/02.jpg" class="img" alt="">
+                        </div>
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(7)">
+                            <div class="appear">Чорнобиль 3828</div>
+                            <img src="img/03.jpg" class="img" alt="">
+                        </div>
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(8)">
+                            <div class="appear">Сугихара, виза на жизнь</div>
+                            <img src="img/04.jpg" class="img" alt="">
+                        </div>
+
+                        <div class="project" onclick="openup();antichrist();currentSlide(9)">
+                            <div class="appear">Сугихара, виза на жизнь</div>
+                            <img src="img/04.jpg" class="img" alt="">
+                        </div>
+
                     </div>
-                    <!-- /.print -->
+                    <!-- /.tabcontent -->
                     <div id="webe" class="tabcontent">
+
                         <div class="project" onclick="openup();currentSlide(1)"></div>
                         <div class="project" onclick="openup();currentSlide(2)"></div>
                         <div class="project" onclick="openup();currentSlide(3)"></div>
@@ -225,9 +281,11 @@
                         <div class="project" onclick="openup();currentSlide(7)"></div>
                         <div class="project" onclick="openup();currentSlide(8)"></div>
                         <div class="project" onclick="openup();currentSlide(9)"></div>
+
                     </div>
                     <!-- /.webe -->
                     <div id="user" class="tabcontent">
+
                         <div class="project" onclick="openup();currentSlide(1)"></div>
                         <div class="project" onclick="openup();currentSlide(2)"></div>
                         <div class="project" onclick="openup();currentSlide(3)"></div>
@@ -237,9 +295,11 @@
                         <div class="project" onclick="openup();currentSlide(7)"></div>
                         <div class="project" onclick="openup();currentSlide(8)"></div>
                         <div class="project" onclick="openup();currentSlide(9)"></div>
+
                     </div>
                     <!-- /.user -->
                     <div id="mock" class="tabcontent">
+
                         <div class="project" onclick="openup();currentSlide(1)"></div>
                         <div class="project" onclick="openup();currentSlide(2)"></div>
                         <div class="project" onclick="openup();currentSlide(3)"></div>
@@ -249,6 +309,7 @@
                         <div class="project" onclick="openup();currentSlide(7)"></div>
                         <div class="project" onclick="openup();currentSlide(8)"></div>
                         <div class="project" onclick="openup();currentSlide(9)"></div>
+                        
                     </div>
                     <!-- /.mock -->
                     <div class="clearfix"></div>
@@ -257,75 +318,183 @@
                 <!-- /.catalog -->
             </div>
             <!-- /.container -->
-            <div id="upcontainer" class="upcontainer">
+            <div class="upcontainer" id="upcontainer">
                 <div class="bg"></div>
+                <!-- /.container -->
                 <div class="up">
-                    <span class="close cursor" onclick="closeup()">&times;</span>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <div class="upSlides">
 
+                    <svg viewBox="0 0 48 48" class="close cursor" onclick="closeup();antichristRevers()">
+                    <path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/>
+                    </svg>
+                    <svg viewBox="0 0 48 48" class="prev" onclick="plusSlides(-1)">
+                    <path d="M30.83 14.83L28 12 16 24l12 12 2.83-2.83L21.66 24z"/>
+                    </svg>
+                    <svg viewBox="0 0 48 48" class="next" onclick="plusSlides(1)">
+                    <path d="M20 12l-2.83 2.83L26.34 24l-9.17 9.17L20 36l12-12z"/>
+                    </svg>
+
+                    <div class="upSlides">
                         <div class="upSlides__content_left">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WZZKRVTXHT8" 
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen></iframe>
-                            <div class="regular gm">
-                                Рік 2016
-                                Мова : англійська, українська
-                                (65‘51)
+
+                            <div class="headline_gm">
+                                Жінки Майдану
                             </div>
-                        </div>
 
+                            <div class="tagline_gm">
+                                Рік 2016<br>Мова: англійська, українська<br>(65‘51)
+                            </div>
+
+                            <div class="regular gm">
+                                Документальний фільм "Жінки Майдану" розповідає історію жінок під час Революції Гідності.<br>
+                                Взимку 2013-2014 років жінки стали стержнем руху і великою підтримкою, що дало змогу тисячам 
+                                людей вистояти на Майдані Незалежності та
+                                протидіяти жорстоким атакам спецрозділів і тодішньої влади, витримати поранення та пройти через 
+                                хвороби.
+                                Заради гідності своєї нації та нового майбутнього для країни, їхня сила змогла прогнати закорінену 
+                                політичну систему.<br>
+                                Перша прем’єра була на Woodstock Film Festival, і він був номінований на найкращу документальну
+                                стрічку. Потім ще кілька фестивалів. В квітні він зайняв перше місце на Fort Myers Film Festival у
+                                Флориді.
+                            </div>
+
+                        </div>
+                        <!-- /.upSlides__content_left -->
                         <div class="upSlides__content_right">
-                            <div class="regular gm">Документальний фільм "Жінки Майдану" розповідає історію жінок під час Революції Гідності.
-Взимку 2013-2014 років жінки стали стержнем руху і великою підтримкою, що дало змогу тисячам людей вистояти на Майдані Незалежності та
-протидіяти жорстоким атакам спецрозділів і тодішньої влади, витримати поранення та пройти через хвороби.
-Заради гідності своєї нації та нового майбутнього для країни, їхня сила змогла прогнати закорінену політичну систему.
-Перша прем’єра була на Woodstock Film Festival, і він був номінований на найкращу документальну
-стрічку. Потім ще кілька фестивалів. В квітні він зайняв перше місце на Fort Myers Film Festival у
-Флориді.</div>
-                        </div>
 
+                            <iframe width="560" height="350" src="https://www.youtube.com/embed/WZZKRVTXHT8" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <!-- /.upSlides__content_right -->
                     </div>
+                    <!-- /.upSlides -->
                     <div class="upSlides">
-                        
+                        <div class="upSlides__content_left">
+
+                            <div class="headline_gm">
+                                Моя війна
+                            </div>
+
+                            <div class="tagline_gm">
+                                Рік 2017<br>
+                                Мова: російська, українська<br>
+                                100 хв
+                            </div>
+
+                            <div class="regular gm">
+                                У центрі — історія Василя Сліпака, всесвітньо відомого українського оперного співака, соліста Паризької
+                                національної опери, волонтера, учасника бойових дій на Сході України, кавалера ордена «За мужність» І ст., 
+                                Героя України, кавалера ордена «Золота Зірка».<br>
+                                Фільм розповідає унікальну історію перетворення звичайного хлопця із львівської околиці, що виріс із 
+                                радянських «хрущовок» і радянських гасел в оперну зірку.<br>
+                                У той же час це — історія ще одного перевтілення: молодого талановитого музиканта європейської 
+                                величини — у «Міфа» – українського патріота, який добровільно відправився на війну на Донбас.
+                            </div>
+
+                        </div>
+                        <!-- /.upSlides__content_left -->
+                        <div class="upSlides__content_right">
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/X8H6bGL4LMs"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                                
+                        </div>
+                        <!-- /.upSlides__content_right -->
                     </div>
+                    <!-- /.upSlides -->
+                    <div class="upSlides">
+                        <div class="upSlides__content_left">
+
+                            <div class="headline_gm">
+                                ВІЗА НА ЖИТТЯ
+                            </div>
+
+                            <div class="tagline_gm">
+                                Рік 2016<br>
+                                Мова: російська, українська<br>
+                                38 хвилин
+                            </div>
+
+                            <div class="regular gm">
+                                Напередодні взяття нацистами Варшави п'ятнадцять тисяч польських євреїв зуміли втекти в нейтральну Литву. 
+                                Коли стало зрозуміло, кульова блискавка війни докотиться і туди, вони стали шукати країну, яка могла б їх 
+                                прийняти. Але противники Гітлера - Англія і США - відмовилися приймати євреїв. Багато європейських країн 
+                                до того моменту вже перестали існувати. Залишалася єдина можливість - їх колонії. Голландський консул в 
+                                Литві видав дозвіл на в'їзд в голландські острови Сурінам та Кюрасао. Але як туди потрапити? Тільки 
+                                транзитом через всю територію СРСР і Японію, ту саму Японію, яка виступила у війні на боці Гітлера ...<br>
+                                Завдяки Стівену Спілбергу і його «Списку Шиндлера», про подвиг німецького фабриканта тепер знає весь світ. 
+                                Але практично ніхто не знає про японському віце-консула, якого доля напередодні війни занесла в провінційний 
+                                литовський Каунас. Але ж він, ризикуючи кар'єрою і навіть
+                                життям своєї родини, врятував в шість разів більше 
+                            </div>
+
+                        </div>
+                        <!-- /.upSlides__content_left -->
+                        <div class="upSlides__content_right">
+
+                            <div class="regular gm">
+                                євреїв, ніж Шиндлер. Неймовірна історія порятунку шести тисяч польських євреїв і на цьому тлі моторошна історія 
+                                знищення практично всіх євреїв, що залишилися в Литві на момент приходу гітлерівців. Причому, знищення руками 
+                                місцевого населення. Фільм «Віза на життя» - про геройство японського консула в противагу колабораціонізму 
+                                каунаських литовців, які до сих пір не хочуть визнавати колективну провину за загибель єврейського населення.    
+                            </div>
+                            
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/X8H6bGL4LMs"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <!-- /.upSlides__content_right -->
+                    </div>
+                    <!-- /.upSlides -->
+
                     <div class="upSlides"></div>
                     <div class="upSlides"></div>
                     <div class="upSlides"></div>
                     <div class="upSlides"></div>
                     <div class="upSlides"></div>
                     <div class="upSlides"></div>
-                    <div class="upSlides"></div>
+
                 </div>
                 <!-- /.up -->
-                
             </div>
             <!-- /.upcontainer -->
-        </div>
-        <!-- /.projects -->
-        <!-- <div class="mailing" id="mailing">
+        </section>
+        <!-- /.section projects -->
+    </main>
+    <footer class="footer" id="link">
+        <section class="section mailing" id="mailing">
             <div class="container">
                 <div class="mailing__content">
 
                     <div class="headline mailing__headline">
                         Design tips, tricks, and freebies. Delivered weekly.
+                    </div>
 
                     <div class="regular">
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius
+                    </div>
 
                 </div>
+                <!-- /.mailing__content -->
                 <form action="" class="form-subscribe">
+
                     <input type="text" placeholder="Email Address..." class="form-subscribe__required regular" required>
+
                     <input type="submit" value="subscribe" class="form-subscribe__submit">
+
                 </form>
+                <!-- /.form-subscribe -->
             </div>
-        </div>
-        /.mailing -->
-    </main>
-    <footer class="footer">
-        <div class="link" id="link">
-            <!-- <div id="link" class="anchor"></div> -->
+            <!-- /.container -->
+        </section>
+        <!-- /.section mailing -->
+        <section class="section link">
             <div class="container">
 
                 <div class="headline link__headline">замовте зворотній емейл з каталогом</div>
@@ -354,9 +523,9 @@
                     <div class="contact">
 
                         <div class="contact__info tagline atop">контакты</div>
-                        <div class="regular atop">Украина, Киев, ул Саксаганского 6</div>
-                        <div class="regular atop">(+88) 017 617 46373</div>
-                        <div class="regular atop">(+88) 017 617 46373</div>
+                        <div class="regular atop">Україна, Київ, пр-т Героїв Сталінграду 20-а</div>
+                        <div class="regular atop">+380 509 485 518</div>
+                        <div class="regular atop">+380 967 392 693</div>
                         <div class="regular atop">redwan@deviserweb.com</div>
 
                     </div>
@@ -365,22 +534,24 @@
                 <!-- /.link__content_right -->
             </div>
             <!-- /.container -->
-        </div>
-        <!-- /.link -->
-        <div class="container">
-            <div class="vault">
+        </section>
+        <!-- /.section link -->
+        <div class="vault">
+            <div class="container">
 
                 <div class="vault__text regular atop">© Copyright @Junaed 2016, All rights reserved.</div>
 
             </div>
-            <!-- /.vault -->
+            <!-- /.container -->
         </div>
-        <!-- /.container -->
+        <!-- /.vault -->
     </footer>
+
     <script src="js/in-view"></script>
     <script src="js/scroll.js"></script>
     <script src="js/stowage.js"></script>
     <script src="js/up.js"></script>
     <script src="js/conter.js"></script>
+    
 </body>
 </html>

@@ -1,18 +1,19 @@
 .provide
-    height: 602px
-    padding: 100px 0px
+    height: 562px
+
+    &-content
+        display: grid
+        grid-template-columns: repeat(2,1fr)
 
     &__content_left
-        float: left
         width: 600px
         height: 400px
-        //background: $key
-        position: relative
         
     &__content_right
-        float: right
         width: 600px
         height: 400px
+        display: grid
+        grid-template-columns: repeat(2,1fr)
 
     
     &__text
@@ -27,17 +28,26 @@
 
 
 .fourth
-    float: left
     width: 300px
     height: 200px
 
     &__icon
         width: 36px
         height: 36px
-        filter:  saturate(3)
+        fill: $key
 
     &__headline
     
     &__text
         
-    
+
+//@media ( max-width: 680px )
+    .provide
+        min-width: 680px
+        height: 920px
+        
+    .provide__content_left
+        float: none
+        
+    .provide__content_right
+        float: none

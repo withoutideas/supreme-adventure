@@ -6,24 +6,26 @@
     padding: 180px 0px 100px
     background: $light
 
+    &-content
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+
     &__content_left
         width: 600px
         height: 320px
-        float: left
-        position: relative
         
     &__content_right
         width: 600px
         height: 320px
-        float: right
-    
+
+
 
 
     &__slogan
         +extrabold
         //text-transform: uppercase
-        font-size: 45px
-        line-height: 67.5px
+        font-size: 50px
+        line-height: 75px
         color: $dark
 
     &__text
@@ -35,3 +37,14 @@
         background: #313030
         display: block
         float: right
+
+//@media ( max-width: 680px )
+    .hero
+        min-width: 680px
+        height: 920px
+        
+    .hero__content_left
+        float: none
+        
+    .hero__content_right
+        float: none

@@ -1,106 +1,67 @@
 .navbar
+    width: 1280px
+    height: 80px
+    background: $dark
     position: fixed
-    z-index: 12
     transform: translate(-50%, -0)
     top: 0%
     left: 50%
-    width: 1200px
-    height: 80px
+    z-index: 12
     display: flex
     justify-content: space-between
-    background: $dark
 
-    &__logo
-        display: flex
+    &-logo
         width: 170px
         height: 80px
+        display: flex
         align-items: center
         padding-left: 40px
 
-        &_text
+        &__text
             +bold
             font-size: 25px
             color: $light
 
-    &__menu
-        display: flex
+    &-menu
         width: 320px
         height: 80px
+        display: flex
     
-        &_menu-item
+        &__item
             width: 80px
             height: 80px
+            text-decoration: none
+            text-align: center
             +bold
             font-size: 12px
             line-height: 80px
             color: $light
             text-transform: uppercase
-            text-decoration: none
-            text-align: center
             user-select: none
-            //background: $key
 
-    &__lang
-        display: flex
-        align-items: center
-        width: 170px
+    &-lang
+        width: 140px
         height: 80px
-        padding: 0px 41px
-
-        &_button
-            display: block
-            width: 30px
-            height: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0px 42px
+        margin-left: 40px
+        
+        &__button
             +extrabold
+            text-transform: uppercase
             font-size: 18px
             line-height: 30px
-            text-transform: uppercase
             text-decoration: none
             text-align: center
             user-select: none
-            //opacity: 0.5
             z-index: 1
             color: $light
 
-.uk:hover
-    background: url('/img/ukraine.png')
-    background-repeat: repeat-x
-    background-position: 0 0
-    text-transform: uppercase
-    text-align: center
-    color: transparent
-    -webkit-font-smoothing: antialiased
-    -webkit-background-clip: text
-    -moz-background-clip: text
-    background-clip: text
-    -webkit-text-fill-color: transparent
-    background-size: cover
-
-.ru:hover
-    background: url('/img/russia.png')
-    background-position: 0 0
-    text-transform: uppercase
-    text-align: center
-    color: transparent
-    -webkit-font-smoothing: antialiased
-    -webkit-background-clip: text
-    -moz-background-clip: text
-    background-clip: text
-    -webkit-text-fill-color: transparent
-    background-size: cover
-
-.in:hover
-    background: url('/img/anguilla.png')
-    background-position: 0 0
-    text-transform: uppercase
-    text-align: center
-    color: transparent
-    -webkit-font-smoothing: antialiased
-    -webkit-background-clip: text
-    -moz-background-clip: text
-    background-clip: text
-    -webkit-text-fill-color: transparent
-    background-size: cover
-
 .is-active
     background: $key
+
+//@media ( max-width: 680px )
+    .navbar
+        width: 680px

@@ -4,9 +4,17 @@ function openup() {
   document.getElementById("upcontainer").style.display = "block";
 }
 
+function antichrist() {
+  document.getElementById("antichrist").style.display = "none";
+}
+
 // Close the Modal
 function closeup() {
   document.getElementById("upcontainer").style.display = "none";
+}
+
+function antichristRevers() {
+  document.getElementById("antichrist").style.display = "block";
 }
 
 var slideIndex = 1;
