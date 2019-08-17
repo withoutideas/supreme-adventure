@@ -48,11 +48,9 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-function viewDiv(){
-  document.getElementById("div1").style.top = "0px";
-  document.getElementById("close").style.top = "0px";
-};
+function look(div1) {
+  var elem = document.getElementById("div1");
 
-function closeDiv(){
-  document.getElementById("div1").style.top = "-800px";
-};
+  elem.style.top === "-800px" ?
+    elem.style.top = "0px" : elem.style.top = "-800px";
+}
