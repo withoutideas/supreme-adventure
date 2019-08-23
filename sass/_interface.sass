@@ -57,7 +57,7 @@ html
 .active
    color: $key !important
 
-.customary-button
+.button
     display: block
     width: 190px
     height: 50px
@@ -70,16 +70,16 @@ html
     border-radius: 6px
     user-select: none
     cursor: pointer
-    //position: absolute
-    //left: 0px
-    //bottom: 0px
+    position: absolute
+    left: 0px
+    bottom: 0px
 
-    &_feedback
+    &_theme_red
         background: $key
         color: $light
         line-height: 50px
 
-    &_more
+    &_theme_white
         color: $key
         border: 2px solid $key
         line-height: 46px
@@ -92,3 +92,6 @@ html
 .anchor
     position: absolute
     margin-top: -80px
+
+a
+    text-decoration: none

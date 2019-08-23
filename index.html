@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бачу ТБ</title>
     <link rel="stylesheet" href="/CSS/normalize.css">
-    <!-- <link rel="stylesheet" href="/CSS/style.css"> -->
-    <link rel="stylesheet" href="https://withoutideas.github.io/supreme-adventure/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- <link rel="stylesheet" href="https://withoutideas.github.io/supreme-adventure/CSS/style.css"> -->
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header">
+
         <div class="container">
             <div class="navbar">
 
@@ -18,73 +19,77 @@
                     <div class="navbar-logo__text">Бачу ТБ</div>
                 </div>
 
-                <div class="navbar-menu">
-                    <a href="#header" class="navbar-menu__item" id="link-header">головна</a>
-                    <a href="#provide" class="navbar-menu__item" id="link-provide">про нас</a>
-                    <a href="#projects"class="navbar-menu__item" id="link-projects" >каталог</a>
-                    <a href="#link" class="navbar-menu__item" id="link-link">контакты</a>
-                </div>
+                <nav class="navbar-menu">
+                    <a href="#hero" class="navbar-menu__button" id="link-hero">головна</a>
+                    <a href="#provide" class="navbar-menu__button" id="link-provide">про нас</a>
+                    <a href="#catalog" class="navbar-menu__button" id="link-catalog" >каталог</a>
+                    <a href="#form" class="navbar-menu__button" id="link-form">контакты</a>
+                </nav>
 
-                <div class="navbar-lang">
+                <nav class="navbar-lang">
                     <a href="#" class="navbar-lang__button active">uk</a>
                     <a href="#" class="navbar-lang__button">in</a>
-                </div>
-
+                </nav>
+                
             </div>
             <!-- /.navbar -->
         </div>
         <!-- /.container -->
-        <section class="section hero">
+
+        <section class="section hero" id="hero">
             <div class="container hero-content">
-                <div class="hero__content_left">
+                <div class="hero-content__left">
 
-                    <strong class="hero__slogan">
-                        Компанія - Бачу ТБ
-                    </strong>
+                    <strong class="hero__slogan">Компанія - Бачу ТБ</strong>
 
-                    <p class="hero__text regular_gray">
-                        об’єднує телекомпанії, студії виробники, авторів і режисерів документальних фільмів. 
-                        Проекти , які ми обертаємо для  каталогу, в першу чергу, мають соціальну, освітню, історичну спрямованість.
+                    <div class="hero__text regular_gray">
+                        об’єднує телекомпанії, студії виробники, авторів і режисерів
+                        документальних фільмів. Проекти, які ми обираємо для  каталогу,
+                        в першу чергу, мають соціальну, освітню, історичну спрямованість.
                         Своєю метою, ми бачимо, підтримку українських виробників і намагаємося 
                         якомога краще робити свою справу.  
-                    </p>
-
-                    <a href="#link" class="customary-button_feedback customary-button">зворотній зв'язок</a>
-
-                </div>
-                <!-- /.hero__content_left -->
-                <div class="hero__content_right">
-
-                    <div class="hero__hook">
                     </div>
 
+                    <a href="#form" class="button button_theme_red">зворотній зв'язок</a>
+
                 </div>
-                <!-- /.hero__content_right -->
+                <!-- /.hero-content__left -->
+                <div class="hero-content__right">
+
+                    <div class="hero__hook"></div>
+                    
+                </div>
+                <!-- /.hero-content__right -->
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section hero -->
+
     </header>
     <main>
+
         <section class="section provide"  id="provide">
             <div class="container provide-content">
-                <div class="provide__content_left">
-
-                    <strong class="headline">
-                        СПІЛЬНИМИ ЗУСИЛЛЯМИ
-                    </strong>
-
-                    <p class="provide__text regular_gray">
-                            •  з телекомпаніями підбираємо на розсуд глядачів, кращі документальні фільми та серіали, публіцистичні цикли, програми для дітей.<br><br>
-                            •  зі студіями виробникам реалізуємо права на мультимедійних майданчиках, створюємо ютуб канали, підтримуємо виробництво.<br><br>
-                            •  з авторами і режисерами супроводжуємо  участь фільмів на кінофестивалях, допомагаємо в оформленні заявок і документів для пітчинів і грантів.
-                    </p>
-
-                    <a href="#div1" class="customary-button customary-button_more" onclick="look('catalog'); return false">дізнатися більше</a>
+                <div class="provide-content__left">
                     
+                    <div class="headline">Спільними зусиллями</div>
+
+                    <div class="provide__text regular_gray">
+                        •  з телекомпаніями підбираємо на розсуд глядачів, кращі 
+                        документальні фільми та серіали, публіцистичні цикли, програми для дітей.<br><br>
+                        •  зі студіями виробникам реалізуємо права на мультимедійних 
+                        майданчиках, створюємо ютуб канали, підтримуємо виробництво.<br><br>
+                        •  з авторами і режисерами супроводжуємо  участь фільмів на 
+                        кінофестивалях, допомагаємо в оформленні заявок і документів для пітчинів і грантів.
+                    </div>
+
+                    <a href="#div1" class="button button_theme_white" onclick="look('catalog'); return false">
+                        дізнатися більше
+                    </a>
+
                 </div>
-                <!-- /.provide__content_left -->
-                <div class="provide__content_right">
+                <!-- /.provide-content__left -->
+                <div class="provide-content__right">
                     <div class="fourth">
 
                         <svg viewBox="0 0 48 48" class="fourth__icon">
@@ -94,7 +99,10 @@
                         <div class="tagline_gray">Каталог</div>
 
                         <div class="regular_gray">
-                            В каталозі компанії переважно документальні, публіцистичні, історичні, соціальні, дитячі проекти українського виробництва...
+                            В каталозі компанії переважно
+                            документальні, публіцистичні,
+                            історичні, соціальні, дитячі проекти
+                            українського виробництва...
                         </div>
 
                     </div>
@@ -106,9 +114,12 @@
                         </svg>
 
                         <div class="tagline_gray">Проекти</div>
-
+                        
                         <div class="regular_gray">
-                            Разом зі Студією «ТЕЛЕКОН» Компанія «Бачу ТБ» вже декілька років створює та розвиває YouTube канал «1986.04.26 Post Scriptum»...
+                            Разом зі Студією «ТЕЛЕКОН» Компанія
+                            «Бачу ТБ» вже декілька років створює
+                            та розвиває YouTube канал<br>
+                            <a href="https://www.youtube.com/channel/UC3vQXwamKL-SBBTX2-1Qd0Q" class="active">1986.04.26 Post Scriptum</a>...
                         </div>
 
                     </div>
@@ -121,38 +132,38 @@
 
                         <div class="tagline_gray">Співпраця</div>
 
-                        
                         <div class="regular_gray">
-                            Ми співпрацюємо з авторами, та надаймо підтримку для участі у конкурсах на отримання грантів...
+                            Ми співпрацюємо з авторами, та
+                            надаймо підтримку для участі у
+                            конкурсах на отримання грантів...
                         </div>
 
                     </div>
                     <!-- /.fourth -->
                      <div class="fourth">
-                         
+
                         <svg viewBox="0 0 48 48" class="fourth__icon">
-                            <path d="M10 26.36v8L24 42l14-7.64v-8L24 34l-14-7.64zM24 6L2 18l22 12 18-9.82V34h4V18L24 6z"/>
+                            <path d="M24 42.7l-2.9-2.63C10.8 30.72 4 24.55 4 17 4 10.83 8.83 6 15 6c3.48 0 6.82 1.62 9 4.17C26.18 7.62 29.52 6 33 6c6.17 0 11 4.83 11 11 0 7.55-6.8 13.72-17.1 23.07L24 42.7z"/>
                         </svg>
 
                         <div class="tagline_gray">Соціальне</div>
 
                         <div class="regular_gray">
-                            Разом з благодійним фондом «ДАР» для телекомпаній пропонуємо соціальні проекти...
+                            Разом з благодійним фондом «ДАР»
+                            для телекомпаній пропонуємо
+                            соціальні проекти...
                         </div>
-
+                        
                     </div>
                     <!-- /.fourth -->
                 </div>
-                <!-- /.provide__content_right -->
-
-
+                <!-- /.provide-content__right -->
             </div>
             <!-- /.container -->
-
-                    <div class="provide__decor"></div>
-
+            <div class="provide__decor"></div>
         </section>
         <!-- /.section provide -->
+
         <section class="section aboutus" id="div1">
             <div class="container aboutus-content">
                 <div class="aboutus__fourth">
@@ -211,15 +222,18 @@
             <!-- /.container -->
         </section>
         <!-- /.section aboutus -->
-        <section class="section projects" id="projects">
+
+        <section class="section projects" id="catalog">
             <div class="container">
+                
                 <div class="projects__content">
 
                     <div class="projects__headline headline">Фрагмент каталогу</div>
 
                     <div class="regular_gray">
                         Тут ви можете побачити тільки деякі позиції з нашого каталогу.<br>
-                        Ви можете відправити запит на повний каталог заповнивши форму зворотнього зв'язку
+                        відправте запит на повний каталог<br>
+                        заповнивши форму зворотнього зв'язку
                     </div>
 
                     <div class="projects__decor" id="antichrist"></div>
@@ -228,11 +242,13 @@
                 <!-- /.projects__content -->
 
                 <div class="stowage">
+
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'print')" id="defaultOpen">Всі</div>
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'webe')">Документальні</div>
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'user')">Телепрограми</div>
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'user')">Дитячі</div>
                     <div class="stowage__button tagline tablinks" onclick="openCity(event, 'mock')">Соціальні</div>
+
                 </div>
                 <!-- /.stowage -->
 
@@ -285,19 +301,20 @@
                         </div>
 
                         <div class="project" onclick="openup();antichrist();currentSlide(7)">
-                                <div class="appear">Чорнобиль 3828</div>
-                                <img src="img/03.jpg" class="img" alt="">
-                            </div>
+                            <div class="appear">Чорнобиль 3828</div>
+                            <img src="img/03.jpg" class="img" alt="">
+                        </div>
     
-                            <div class="project" onclick="openup();antichrist();currentSlide(8)">
-                                <div class="appear">Сугихара, виза на жизнь</div>
-                                <img src="img/04.jpg" class="img" alt="">
-                            </div>
+                        <div class="project" onclick="openup();antichrist();currentSlide(8)">
+                            <div class="appear">Сугихара, виза на жизнь</div>
+                            <img src="img/04.jpg" class="img" alt="">
+                        </div>
     
-                            <div class="project" onclick="openup();antichrist();currentSlide(9)">
-                                <div class="appear">Сугихара, виза на жизнь</div>
-                                <img src="img/04.jpg" class="img" alt="">
-                                
+                        <div class="project" onclick="openup();antichrist();currentSlide(9)">
+                            <div class="appear">Сугихара, виза на жизнь</div>
+                            <img src="img/04.jpg" class="img" alt="">
+                        </div>
+
                     </div>
                     <!-- /.tabcontent -->
                     <div id="webe" class="tabcontent">
@@ -342,12 +359,16 @@
                         
                     </div>
                     <!-- /.mock -->
+
                     <div class="clearfix"></div>
-                    <!-- /.clearfix -->
+
                 </div>
                 <!-- /.catalog -->
+
             </div>
             <!-- /.container -->
+
+
             <div class="upcontainer" id="upcontainer">
                 <div class="bg"></div>
                 <!-- /.container -->
@@ -356,14 +377,16 @@
                     <svg viewBox="0 0 48 48" class="close cursor" onclick="closeup();antichristRevers()">
                     <path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/>
                     </svg>
+
                     <svg viewBox="0 0 48 48" class="prev" onclick="plusSlides(-1)">
                     <path d="M30.83 14.83L28 12 16 24l12 12 2.83-2.83L21.66 24z"/>
                     </svg>
+
                     <svg viewBox="0 0 48 48" class="next" onclick="plusSlides(1)">
                     <path d="M20 12l-2.83 2.83L26.34 24l-9.17 9.17L20 36l12-12z"/>
                     </svg>
 
-                    <div class="upSlides">
+                    <article class="upSlides">
                         <div class="upSlides__content_left">
 
                             <div class="headline_gm">
@@ -399,9 +422,9 @@
 
                         </div>
                         <!-- /.upSlides__content_right -->
-                    </div>
+                    </article>
                     <!-- /.upSlides -->
-                    <div class="upSlides">
+                    <article class="upSlides">
                         <div class="upSlides__content_left">
 
                             <div class="headline_gm">
@@ -436,9 +459,9 @@
                             
                         </div>
                         <!-- /.upSlides__content_right -->
-                    </div>
+                    </article>
                     <!-- /.upSlides -->
-                    <div class="upSlides">
+                    <article class="upSlides">
                         <div class="upSlides__content_left">
 
                             <div class="headline_gm">
@@ -482,15 +505,15 @@
 
                         </div>
                         <!-- /.upSlides__content_right -->
-                    </div>
+                    </article>
                     <!-- /.upSlides -->
 
-                    <div class="upSlides"></div>
-                    <div class="upSlides"></div>
-                    <div class="upSlides"></div>
-                    <div class="upSlides"></div>
-                    <div class="upSlides"></div>
-                    <div class="upSlides"></div>
+                    <article class="upSlides"></article>
+                    <article class="upSlides"></article>
+                    <article class="upSlides"></article>
+                    <article class="upSlides"></article>
+                    <article class="upSlides"></article>
+                    <article class="upSlides"></article>
 
                 </div>
                 <!-- /.up -->
@@ -498,14 +521,13 @@
             <!-- /.upcontainer -->
         </section>
         <!-- /.section projects -->
-    </main>
-    <footer class="footer" id="link">
-        <section class="section mailing" id="mailing">
+
+        <!-- <section class="section mailing" id="mailing">
             <div class="container">
                 <div class="mailing__content">
 
                     <div class="headline mailing__headline">
-                        
+                        Підпишіться на розссилку
                     </div>
 
                     <div class="regular">
@@ -513,7 +535,7 @@
                     </div>
 
                 </div>
-                <!-- /.mailing__content -->
+
                 <form action="" class="form-subscribe">
 
                     <input type="text" placeholder="Email Address..." class="form-subscribe__required regular" required>
@@ -521,53 +543,59 @@
                     <input type="submit" value="subscribe" class="form-subscribe__submit">
 
                 </form>
-                <!-- /.form-subscribe -->
+
             </div>
-            <!-- /.container -->
+
         </section>
-        <!-- /.section mailing -->
+        /.section mailing -->
+
+    </main>
+    <footer class="footer" id="form">
+
         <section class="section link">
-            <div class="container">
+            <div class="container link-content">
+                <div class="link-content__top">
 
-                <div class="headline link__headline">замовте зворотній емейл з каталогом</div>
-
-                <div class="link__text regular_gray">
-                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
-                    <br>labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing
-                    <br>elit, ed doi eiusmod tempor incididunt ut labore et.
-                </div>
+                    <div class="headline link__headline">замовте зворотній емейл з каталогом</div>
                     
-                <div class="decor"></div>
+                    <div class="link__text regular_gray">
+                        Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
+                        <br>labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing
+                        <br>elit, ed doi eiusmod tempor incididunt ut labore et.
+                    </div>
 
-                <div class="link__content_left">
+                    <div class="decor"></div>
 
-                    <form action="#" class="form-Feedback">
-                        <input type="text" placeholder="Ваше ім'я" class="form-Feedback__required regular" required>
-                        <input type="text" placeholder="Ваш емейл" class="form-Feedback__required regular" required>
-                        <textarea type="text" placeholder="Назва вашої організації, потреби, побажаня" class="form-Feedback__dop regular" required></textarea>
+                </div>
+                <!-- /.link-content__top -->
+                <div class="link-content__left">
+
+                    <form method="POST" action="https://formspree.io/lazywebstudying@gmail.com" class="form-Feedback">
+                        <input type="text" name="name" placeholder="Ваше ім'я" class="form-Feedback__required regular" required>
+                        <input type="text" name="email" placeholder="Ваш емейл" class="form-Feedback__required regular" required>
+                        <textarea type="text" name="message" placeholder="Назва вашої організації" class="form-Feedback__dop regular" required></textarea>
                         <input value="отримати зворотній емейл" type="submit" class="form-Feedback__submit">
                     </form>
 
                 </div>
                 <!-- /.link__content_left -->
-                <div class="link__content_right">
+                <div class="link-content__right">
 
                     <div class="contact">
-
                         <div class="contact__info tagline atop">контакты</div>
                         <div class="regular atop">Україна, Київ, пр-т Героїв Сталінграду 20-а</div>
                         <div class="regular atop">+380 509 485 518</div>
                         <div class="regular atop">+380 967 392 693</div>
                         <div class="regular atop">redwan@deviserweb.com</div>
-
                     </div>
-                    <!-- /.contact -->
+
                 </div>
                 <!-- /.link__content_right -->
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section link -->
+
         <div class="vault">
             <div class="container">
 
@@ -577,13 +605,14 @@
             <!-- /.container -->
         </div>
         <!-- /.vault -->
+
     </footer>
 
     <script src="js/in-view"></script>
     <script src="js/scroll.js"></script>
     <script src="js/stowage.js"></script>
     <script src="js/up.js"></script>
-    <script src="js/conter.js"></script>
+    <script src="js/nodemailer.js"></script>
     
 </body>
 </html>

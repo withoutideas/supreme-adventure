@@ -14,4 +14,4 @@ const handleView = item => {
 };
 
 // Apply method on each DOM element
-["header", "provide", "projects", "mailing", "link"].forEach(handleView);
+["hero", "provide", "catalog", "mailing", "form"].forEach(handleView);

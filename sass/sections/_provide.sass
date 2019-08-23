@@ -1,5 +1,5 @@
 .provide
-    height: 562px
+    height: 600px
     z-index: 2
     position: relative
     background: white
@@ -8,23 +8,24 @@
         display: grid
         grid-template-columns: repeat(2,1fr)
 
-    &__content_left
-        width: 600px
-        height: 400px
+        &__left
+            width: 600px
+            height: 400px
+            position: relative
         
-    &__content_right
-        width: 600px
-        height: 400px
-        display: grid
-        grid-template-columns: repeat(2,1fr)
+        &__right
+            width: 600px
+            height: 400px
+            display: grid
+            grid-template-columns: repeat(2,1fr)
 
     
     &__text
-        margin: 20px 0px 25px
+        margin-top: 20px
     
     &__decor
         display: block
-        width: 1100px
+        width: 1200px
         height: 3px
         background: $light
         margin: 100px auto 0px
