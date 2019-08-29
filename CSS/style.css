@@ -5,7 +5,6 @@
 
 body {
   margin: auto;
-  padding: auto;
 }
 
 .container {
@@ -68,7 +67,6 @@ html {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 45px;
-  color: #312f30;
 }
 
 .headline_gm {
@@ -99,7 +97,6 @@ html {
   line-height: 30px;
   color: white;
   padding-bottom: 20px;
-  margin-left: 40px;
 }
 
 .regular {
@@ -289,7 +286,6 @@ a {
   font-family: 'Open Sans ExtraBold', sans-serif;
   font-size: 50px;
   line-height: 40px;
-  color: #312f30;
 }
 
 .hero__text {
@@ -419,6 +415,8 @@ a {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .stowage-button.active {
@@ -543,13 +541,17 @@ a {
   position: absolute;
   top: 70px;
   right: 0px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 .close:hover,
 .close:focus {
-  color: #ff3f40;
-  text-decoration: none;
-  cursor: pointer;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 /* Hide the slides by default */
@@ -568,18 +570,19 @@ a {
   width: 600px;
   height: 500px;
   float: left;
-  padding-right: 39px;
+  padding-right: 10px;
 }
 
 .upSlides__content_right {
   width: 600px;
   height: 500px;
   float: right;
+  padding-left: 10px;
 }
 
 iframe {
   float: right;
-  width: 600px;
+  width: 590px;
 }
 
 .gm {
@@ -603,6 +606,10 @@ iframe {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 /* Position the "next button" to the right */
@@ -619,7 +626,8 @@ iframe {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 /* Caption text */
@@ -627,11 +635,6 @@ iframe {
   text-align: center;
   padding: 2px 16px;
   color: white;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
 
 .mailing {
@@ -722,6 +725,14 @@ iframe {
   grid-row: 1;
 }
 
+.link-content__left {
+  width: 720px;
+}
+
+.link-content__right {
+  width: 480px;
+}
+
 .link__text {
   margin: 20px 0px 0px;
 }
@@ -746,6 +757,15 @@ iframe {
   border: none;
   border-radius: 6px;
   padding: 20px;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.form-Feedback__required:focus {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .form-Feedback__dop {
@@ -758,6 +778,15 @@ iframe {
   margin: 40px 0px 36px;
   resize: none;
   outline: none;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.form-Feedback__dop:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .form-Feedback__submit {
@@ -781,7 +810,7 @@ input {
 }
 
 .contact {
-  width: 100%;
+  width: 520px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

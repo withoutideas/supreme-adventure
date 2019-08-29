@@ -33,13 +33,13 @@
     position: absolute
     top: 70px
     right: 0px
+    cursor: pointer
+    transition: transform 500ms
 
 
 .close:hover,
-.close:focus 
-    color: $key
-    text-decoration: none
-    cursor: pointer
+.close:focus
+    transform: scale(1.3)
 
 
 /* Hide the slides by default */
@@ -58,16 +58,17 @@
         width: 600px
         height: 500px
         float: left
-        padding-right: 39px
+        padding-right: 10px
 
     &__content_right
         width: 600px
         height: 500px
         float: right
+        padding-left: 10px
 
 iframe
     float: right
-    width: 600px
+    width: 590px
 
 .gm
     color: white
@@ -86,6 +87,7 @@ iframe
     border-radius: 0 3px 3px 0
     user-select: none
     -webkit-user-select: none
+    transition: transform 500ms
 
 
 /* Position the "next button" to the right */
@@ -102,7 +104,7 @@ iframe
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover
-    background-color: rgba(0, 0, 0, 0.4)
+    transform: scale(1.3)
 
 /* Caption text */
 .caption-container 
@@ -112,5 +114,4 @@ iframe
 
 .active,
 .demo:hover
-    opacity: 1
 

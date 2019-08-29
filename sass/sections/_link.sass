@@ -10,8 +10,10 @@
             grid-row: 1
 
         &__left
+            width: 720px
 
         &__right
+            width: 480px
     
     &__text
         margin: 20px 0px 0px
@@ -34,11 +36,10 @@
         border: none
         border-radius: 6px
         padding: 20px
+        transition: transform 500ms
     
-    //&__required:focus
-        border: 2px solid $light
-        background: white
-        padding: 20px 18px
+    &__required:focus
+        transform: scale(1.09)
 
     &__dop
         width: 680px
@@ -50,11 +51,10 @@
         margin: 40px 0px 36px
         resize: none
         outline: none
+        transition: transform 500ms
     
-    //&__dop:focus
-        border: 2px solid $dark
-        background: $light
-        padding: 18px 18px
+    &__dop:focus
+        transform: scale(1.05)
     
     &__submit
         width: 680px
@@ -75,7 +75,7 @@ input
     outline: none
 
 .contact
-    width: 100%
+    width: 520px
     height: 100%
     display: flex
     flex-direction: column

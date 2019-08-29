@@ -21,7 +21,6 @@
         background: $key
         margin: 38px auto 28px
 
-
 .stowage
     //overflow: hidden
     width: 600px
@@ -36,9 +35,11 @@
         text-transform: uppercase
         user-select: none
         cursor: pointer
+        transition: 500ms
 
-    &-button:hover
-        //color: rgba(0, 0, 0, 0.5)
+    &__button:hover
+        //border-bottom: 2px solid $key
+        //font-size: 25px
 
     &-button.active
         color: $key
@@ -92,12 +93,6 @@
 
 .appear:hover
     opacity: 1
-
-.appear:active
-
-.appear:target
-
-
 
 .appear:hover + .img
     opacity: 0.6
