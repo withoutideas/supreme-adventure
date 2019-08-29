@@ -1,6 +1,6 @@
 
 .projects
-    padding-bottom: 55px
+    //padding-bottom: 85px
 
     &__content
         text-align: center
@@ -19,15 +19,15 @@
         width: 200px
         height: 2px
         background: $key
-        margin: 28px auto
+        margin: 38px auto 28px
 
 
 .stowage
     //overflow: hidden
-    width: 700px
+    width: 600px
     display: flex
     justify-content: space-between
-    margin: 0px auto 50px
+    margin: 0px auto 30px
 
     &__button
         padding: 10px
@@ -52,23 +52,26 @@
 .project
     display: inline-block
     position: relative
-    width: 370px
-    height: 280px
-    margin-right: 45px
-    margin-bottom: 45px
-    background: $dark
+    width: 285px
+    height: 285px
+    margin-right: 20px
+    margin-bottom: 20px
+    background: black
     overflow: hidden
 
+    &_ad
+        background: none
+    
 .appear
     position: absolute
     top: 0
     left: 0
-    width: 370px
-    height: 280px
+    width: 285px
+    height: 285px
     +semibold
-    font-size: 20px
+    font-size: 18px
     text-align: center
-    line-height: 280px
+    line-height: 285px
     text-transform: uppercase
     color: white
     opacity: 0
@@ -77,10 +80,13 @@
     user-select: none
     cursor: pointer
 
+    &_ad
+        color: $key
+
 .img
     position: absolute
-    width: 370px
-    height: 280px
+    width: 285px
+    height: 285px
     opacity: 1
     transition: opacity 500ms , filter 500ms , transform 500ms 
 
@@ -94,15 +100,14 @@
 
 
 .appear:hover + .img
-    opacity: 0.4
+    opacity: 0.6
     transform: scale(1.05)
-    filter:  grayscale(90%)
+    //filter:  grayscale(90%)
 
-.project:nth-child(3n)
+.project:nth-child(4n)
     margin-right: 0px
 
 .clearfix
-    height: 0px
     clear: both
 
 

@@ -3,7 +3,7 @@
 const handleView = item => {
     const linkEl = document.querySelector(`#link-${item}`);
 
-    let offsetHeight = 0.999*(window.innerHeight)
+    let offsetHeight = 0.999*(window.innerHeight)-0.1
     inView.offset({
       bottom:offsetHeight
     });
