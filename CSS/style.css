@@ -96,7 +96,7 @@ html {
   font-size: 20px;
   line-height: 30px;
   color: white;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .regular {
@@ -583,6 +583,17 @@ a {
 iframe {
   float: right;
   width: 590px;
+  height: 300px;
+}
+
+.cart {
+  width: 590px;
+  height: 199px;
+  float: right;
+}
+
+.foto-card {
+  display: inline-block;
 }
 
 .gm {
@@ -757,15 +768,6 @@ iframe {
   border: none;
   border-radius: 6px;
   padding: 20px;
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.form-Feedback__required:focus {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
 }
 
 .form-Feedback__dop {
@@ -778,15 +780,6 @@ iframe {
   margin: 40px 0px 36px;
   resize: none;
   outline: none;
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.form-Feedback__dop:focus {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .form-Feedback__submit {
